@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="account_asset_facpce_view_tree" model="ir.ui.view">
+        <field name="name">account.asset.facpce.tree</field>
+        <field name="model">account.asset.facpce</field>
+        <field name="arch" type="xml">
+            <tree string="FACPCE Inflation Indexes" editable="top">
+                <field name="name" />
+                <field name="date_start" />
+                <field name="date_end" />
+                <field name="inflation_coefficient"/>
+                <field name="company_id" groups="base.group_multi_company"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="account_asset_facpce_action" model="ir.actions.act_window">
+        <field name="name">FACPCE Inflation Indexes</field>
+        <field name="res_model">account.asset.facpce</field>
+        <field name="view_mode">tree</field>
+    </record>
+
+    <menuitem
+        id="account_asset_facpce"
+        action="account_asset_facpce_action"
+        parent="account_asset_management.menu_finance_config_assets"
+        sequence="5"
+    />
+</odoo>

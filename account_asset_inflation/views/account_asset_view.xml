@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record model="ir.ui.view" id="account_asset_view_form">
+        <field name="name">account.asset.form</field>
+        <field name="model">account.asset</field>
+        <field name="inherit_id" ref="account_asset_management.account_asset_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook/page[2]" position="after">
+                <page string="Inflation Board" name="inflation_board">
+                    <div>
+                        <button
+                                type="object"
+                                name="compute_depreciation_board"
+                                string="Compute"
+                                icon="fa-gears"
+                                attrs="{'invisible': [('state', 'in', ['close', 'removed'])]}"
+                        />
+                    </div>
+                    <field
+                            name="inflation_line_ids"
+                            mode="tree"
+                            options="{'reload_on_button': true}"
+                    >
+                        <tree
+                                string="Asset Lines"
+                                decoration-info="(move_check == False) and (init_entry == False)"
+                                create="false"
+                        >
+                            <field name="line_date"/>
+                            <field name="historical_value" />
+                            <field name="inflation_coefficient_status" style="text-align:center;" />
+                            <field name="historical_value_result"/>
+                            <field name="inflation_adjustment" sum="Total"/>
+                            <field name="depreciated_value" />
+                            <field name="depreciated_value_result" />
+                            <field name="depreciated_adjustment" sum="Total"/>
+                            <field name="init_entry" string="Init" invisible="1"/>
+                            <field name="move_check"/>
+                            <field name="parent_state" invisible="1"/>
+                            <button
+                                    name="create_move"
+                                    icon="fa-cog"
+                                    string="Create Move"
+                                    type="object"
+                                    attrs="{'invisible': ['|', '|', ('init_entry', '=', True), ('move_check', '!=', False), ('parent_state', '!=', 'open')]}"
+                            />
+                            <button
+                                    name="open_move"
+                                    icon="fa-folder-open-o"
+                                    string="View Move"
+                                    type="object"
+                                    attrs="{'invisible': [('move_check', '!=', True)]}"
+                            />
+                            <button
+                                    name="unlink_move"
+                                    icon="fa-times"
+                                    string="Delete Move"
+                                    type="object"
+                                    confirm="Are you sure ?"
+                                    groups="account.group_account_manager"
+                                    attrs="{'invisible': [('move_check', '!=', True)]}"
+                            />
+                        </tree>
+                        <form string="Asset Line">
+                            <group>
+                                <group>
+                                    <field name="parent_state" invisible="1"/>
+                                    <field
+                                            name="depreciation_base"
+                                            invisible="1"
+                                    />
+                                    <field name="type"/>
+                                    <field name="name"/>
+                                    <field
+                                            name="amount"
+                                            attrs="{'readonly': [('move_check', '=', True)]}"
+                                    />
+                                    <field
+                                            name="init_entry"
+                                            attrs="{'readonly': ['|', ('move_check', '=', True), ('type', '=', 'create')]}"
+                                    />
+                                    <field name="move_id"/>
+                                    <field name="move_check"/>
+                                </group>
+                                <group>
+                                    <field
+                                            name="line_date"
+                                            attrs="{'readonly': [('move_check', '=', True)]}"
+                                    />
+                                    <field
+                                            name="depreciated_value"
+                                            readonly="1"
+                                    />
+                                    <field
+                                            name="remaining_value"
+                                            readonly="1"
+                                    />
+                                </group>
+                            </group>
+                        </form>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>
