@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <record id="account_move_fy_report_wizard_view" model="ir.ui.view">
+        <field name="name">Account Move Fiscal Year Report Wizard View</field>
+        <field name="model">account.move.fiscal.year.report.wizard</field>
+        <field name="arch" type="xml">
+            <form>
+                <group>
+                    <field name="fiscal_year" attrs="{'required': [('by_period','=', False)]}" options="{'no_open':True,'no_create':1,'no_create_edit':1}"/>
+                    <field name="by_period" />
+                    <br/>
+                    <field name="date_from" attrs="{'invisible': [('by_period','=', False)], 'required': [('by_period','=', True)]}" />
+                    <field name="date_to" attrs="{'invisible': [('by_period','=', False)], 'required': [('by_period','=', True)]}" />
+                </group>
+                <footer>
+                    <button name="generate_xls_report" string="Print XLSX" type="object" class="oe_highlight" />
+                    <button special="cancel" string="Cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <act_window id="account_move_fy_report_wizard_action" name="Account Move Fiscal Year Report" res_model="account.move.fiscal.year.report.wizard" view_type="form" view_mode="form" target="new" />
+
+    <menuitem id="account_move_fy_report_wizard_menu" name="Account Move Fiscal Year Report" parent="account.account_reports_management_menu" action="account_move_fy_report_wizard_action" />
+
+</odoo>

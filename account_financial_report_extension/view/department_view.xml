@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+ 
+        <record id="view_account_department_form" model="ir.ui.view">
+            <field name="name">account.department.form</field>
+            <field name="model">account.department</field>
+            <field name="arch" type="xml">
+                <form string="Account Department">
+                    <group>
+                        <field name="name"/>
+                        <field name="code_sufix"/>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_account_department_search" model="ir.ui.view">
+            <field name="name">account.department.search</field>
+            <field name="model">account.department</field>
+            <field name="arch" type="xml">
+                <search string="Account Departments">
+                    <field name="name"
+                           filter_domain="['|', ('code_sufix', '=like', str(self) + '%'), ('name', 'ilike', self)]"
+                           string="Account Department"/>
+                </search>
+            </field>
+        </record>
+
+        <record id="view_account_department_tree" model="ir.ui.view">
+            <field name="name">account.department.tree</field>
+            <field name="model">account.department</field>
+            <field name="arch" type="xml">
+                <tree string="Account Department">
+                    <field name="code_sufix"/>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="action_account_department_tree" model="ir.actions.act_window">
+            <field name="name">Account Department</field>
+            <field name="res_model">account.department</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="view_account_department_search"/>
+        </record>
+
+        <menuitem action="action_account_department_tree" id="menu_action_account_department_form" parent="account.account_account_menu" groups="account.group_account_user" sequence="0"/>
+  </data>
+</odoo>

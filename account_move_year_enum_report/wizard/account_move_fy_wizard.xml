@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="account_move_fy_report_extend_wizard_view" model="ir.ui.view">
+        <field name="name">Pdf Button Account Move Fiscal Year Wizard</field>
+        <field name="model">account.move.fiscal.year.report.wizard</field>
+        <field name="inherit_id" ref="account_move_year_enum.account_move_fy_report_wizard_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//form/footer/button[@name='generate_xls_report']" position="after">
+                <button name="print_account_fy_report" string="Print PDF" type="object" class="oe_highlight" />
+            </xpath>
+        </field>
+    </record>
+
+</odoo>

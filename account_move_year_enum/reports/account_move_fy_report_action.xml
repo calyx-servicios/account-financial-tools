@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <report id="account_move_fy_report_action" model="account.move.fiscal.year.report.wizard" string="Account Move Fiscal Year Report" report_type="xlsx" name="account_move_fiscal_year_id.account_move_fy_report_xlsx" file="Reporte Asientos por Año Fiscal" attachment_use="False" />
+</odoo>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <record id="trial_balance_wizard" model="ir.ui.view">
+        <field name="model">trial.balance.report.wizard</field>
+        <field name="name">trial.balance.report.wizard.form</field>
+        <field name="inherit_id" ref="account_financial_report.trial_balance_wizard" />
+        <field name="arch" type="xml">
+          <xpath expr="//group[@name='other_filters']" position="inside">
+            <field name="by_group_sequence"/>
+            <field name="by_department"/>
+            <field name="by_month"/>
+          </xpath>
+          <xpath expr="//group[@name='other_filters']" position="after">
+                <group name="account_department" col="4">
+                        <label for="department_ids" colspan="4"/>
+                        <field name="department_ids"
+                               nolabel="1"
+                               widget="many2many_tags"
+                               options="{'no_create': True}"
+                               colspan="4"/>
+                    </group>
+          </xpath>
+        </field>
+    </record>
+  </data>
+</odoo>

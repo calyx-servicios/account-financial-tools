@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <record id="general_ledger_custom_wizard" model="ir.ui.view">
+        <field name="model">general.ledger.report.wizard</field>
+        <field name="name">general.ledger.report.wizard.tree</field>
+        <field name="inherit_id" ref="account_financial_report.general_ledger_wizard" />
+        <field name="arch" type="xml">
+          <xpath expr="//field[@name='show_analytic_tags']" position="after">
+            <field name="ungroup" />
+          </xpath>
+        </field>
+    </record>
+  </data>
+</odoo>
