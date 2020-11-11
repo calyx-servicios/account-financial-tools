@@ -1,0 +1,115 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* account_fiscal_year_backported
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-07-01 23:47+0000\n"
+"PO-Revision-Date: 2020-07-01 23:47+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: account_fiscal_year_backported
+#: model:ir.ui.view,arch_db:account_fiscal_year_backported.action_account_fiscal_year_form
+msgid "20XX"
+msgstr "20XX"
+
+#. module: account_fiscal_year_backported
+#: model:ir.actions.act_window,help:account_fiscal_year_backported.actions_account_fiscal_year
+msgid "Click here to create a new fiscal year."
+msgstr "Click aquí para crear un nuevo Año Fiscal."
+
+#. module: account_fiscal_year_backported
+#: model:ir.model.fields,field_description:account_fiscal_year_backported.field_account_fiscal_year_company_id
+msgid "Company"
+msgstr "Compañía"
+
+#. module: account_fiscal_year_backported
+#: model:ir.model.fields,field_description:account_fiscal_year_backported.field_account_fiscal_year_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: account_fiscal_year_backported
+#: model:ir.model.fields,field_description:account_fiscal_year_backported.field_account_fiscal_year_create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: account_fiscal_year_backported
+#: model:ir.model.fields,field_description:account_fiscal_year_backported.field_account_fiscal_year_display_name
+msgid "Display Name"
+msgstr "Mostrar Nombre"
+
+#. module: account_fiscal_year_backported
+#: model:ir.model.fields,field_description:account_fiscal_year_backported.field_account_fiscal_year_date_to
+msgid "End Date"
+msgstr "Fecha de finalización"
+
+#. module: account_fiscal_year_backported
+#: model:ir.model.fields,help:account_fiscal_year_backported.field_account_fiscal_year_date_to
+msgid "Ending Date, included in the fiscal year."
+msgstr "Fecha de Fin, incluída en el año fiscal."
+
+#. module: account_fiscal_year_backported
+#: model:ir.model,name:account_fiscal_year_backported.model_account_fiscal_year
+msgid "Fiscal Year"
+msgstr "Año Fiscal"
+
+#. module: account_fiscal_year_backported
+#: model:ir.actions.act_window,name:account_fiscal_year_backported.actions_account_fiscal_year
+#: model:ir.ui.menu,name:account_fiscal_year_backported.menu_actions_account_fiscal_year
+msgid "Fiscal Years"
+msgstr "Años Fiscales"
+
+#. module: account_fiscal_year_backported
+#: model:ir.model.fields,field_description:account_fiscal_year_backported.field_account_fiscal_year_id
+msgid "ID"
+msgstr "ID"
+
+#. module: account_fiscal_year_backported
+#: model:ir.model.fields,field_description:account_fiscal_year_backported.field_account_fiscal_year___last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: account_fiscal_year_backported
+#: model:ir.model.fields,field_description:account_fiscal_year_backported.field_account_fiscal_year_write_uid
+msgid "Last Updated by"
+msgstr "Última actualización realizada por"
+
+#. module: account_fiscal_year_backported
+#: model:ir.model.fields,field_description:account_fiscal_year_backported.field_account_fiscal_year_write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: account_fiscal_year_backported
+#: model:ir.model.fields,field_description:account_fiscal_year_backported.field_account_fiscal_year_name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: account_fiscal_year_backported
+#: model:ir.model.fields,field_description:account_fiscal_year_backported.field_account_fiscal_year_date_from
+msgid "Start Date"
+msgstr "Fecha de Inicio"
+
+#. module: account_fiscal_year_backported
+#: model:ir.model.fields,help:account_fiscal_year_backported.field_account_fiscal_year_date_from
+msgid "Start Date, included in the fiscal year."
+msgstr "Fecha de inicio, incluída en el año fiscal."
+
+#. module: account_fiscal_year_backported
+#: code:addons/account_fiscal_year_backported/models/account_fiscal_year.py:40
+#, python-format
+msgid "The ending date must not be prior to the starting date."
+msgstr "La fecha de fin no puede ser antecesor de la fecha de inicio."
+
+#. module: account_fiscal_year_backported
+#: code:addons/account_fiscal_year_backported/models/account_fiscal_year.py:52
+#, python-format
+msgid "You can not have an overlap between two fiscal years, please correct the start and/or end dates of your fiscal years."
+msgstr "No puede sobreponer fechas, por favor corrija las fechas de inicio y/o fin de sus años fiscales."
+
