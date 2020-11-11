@@ -1,0 +1,447 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* account_fiscal_year_closing
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-09-18 21:11+0000\n"
+"PO-Revision-Date: 2020-09-18 21:11+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: account_fiscal_year_closing
+#: model:ir.ui.view,arch_db:account_fiscal_year_closing.account_fiscal_year_closing_wizard_view
+msgid "<strong>\n"
+"                            <i class=\"fa fa-bell-o\"/>\n"
+"                                The remove option is recursive.\n"
+"                        </strong>"
+msgstr "<strong>\n"
+"                            <i class=\"fa fa-bell-o\"/>\n"
+"                                La Reversión de procesos es recursiva.\n"
+"                        </strong>"
+
+#. module: account_fiscal_year_closing
+#: model:ir.model,name:account_fiscal_year_closing.model_account_account
+msgid "Account"
+msgstr "Cuenta"
+
+#. module: account_fiscal_year_closing
+#: model:ir.model,name:account_fiscal_year_closing.model_account_move
+msgid "Account Entry"
+msgstr "Asiento Contable"
+
+#. module: account_fiscal_year_closing
+#: model:ir.ui.view,arch_db:account_fiscal_year_closing.account_fiscal_year_closing_wizard_view
+msgid "Account fiscal year closing"
+msgstr "Cierre de ejercicio fiscal."
+
+#. module: account_fiscal_year_closing
+#: model:ir.actions.act_window,name:account_fiscal_year_closing.account_fiscal_year_closing_wizard_action
+msgid "Account fiscal year closing wizard"
+msgstr "Cierre de año fiscal"
+
+#. module: account_fiscal_year_closing
+#: model:ir.model.fields,field_description:account_fiscal_year_closing.field_account_account_recasting_account
+msgid "Account to recasting exercise"
+msgstr "Cuenta para el proceso de refundición"
+
+#. module: account_fiscal_year_closing
+#: model:ir.ui.view,arch_db:account_fiscal_year_closing.account_fiscal_year_closing_wizard_view
+msgid "Action Process"
+msgstr "Iniciar Proceso"
+
+#. module: account_fiscal_year_closing
+#: code:addons/account_fiscal_year_closing/models/account_journal.py:43
+#, python-format
+msgid "Already exist another consolidation results journal (%r)."
+msgstr "Ya existe otro diario para el pasaje a resultados acumulados (%r)."
+
+#. module: account_fiscal_year_closing
+#: code:addons/account_fiscal_year_closing/wizard/fiscal_year_closing.py:372
+#, python-format
+msgid "Already exist another consolidation results move                         for this fiscal year (%r)                         please remove it before continue."
+msgstr "Ya existe otro movimiento de pasaje a resultados acumulados (%r) para el año fiscal por favor eliminelo antes de continuar."
+
+#. module: account_fiscal_year_closing
+#: code:addons/account_fiscal_year_closing/models/account_journal.py:57
+#, python-format
+msgid "Already exist another equity closing journal (%r)."
+msgstr "Ya existe otro diario para el cierre de cuentas patrimoniales (%r)."
+
+#. module: account_fiscal_year_closing
+#: code:addons/account_fiscal_year_closing/wizard/fiscal_year_closing.py:460
+#, python-format
+msgid "Already exist another equity closing move                         for this fiscal year (%r)                         please remove it before continue."
+msgstr "Ya existe otro movimiento de cierre de cuentas patrimoniales (%r) para el año fiscal por favor eliminelo antes de continuar."
+
+#. module: account_fiscal_year_closing
+#: code:addons/account_fiscal_year_closing/models/account_journal.py:71
+#, python-format
+msgid "Already exist another equity opening journal (%r)."
+msgstr "Ya existe otro diario (%r) para la apertura de cuentas patrimoniales."
+
+#. module: account_fiscal_year_closing
+#: code:addons/account_fiscal_year_closing/models/account_account.py:19
+#, python-format
+msgid "Already exist another recasting account (%r)."
+msgstr "Ya existe otra cuenta (%r) para el proceso de refundición."
+
+#. module: account_fiscal_year_closing
+#: code:addons/account_fiscal_year_closing/models/account_journal.py:29
+#, python-format
+msgid "Already exist another recasting journal (%r)."
+msgstr "Ya existe otro diario (%r) para el proceso de refundición."
+
+#. module: account_fiscal_year_closing
+#: code:addons/account_fiscal_year_closing/wizard/fiscal_year_closing.py:322
+#, python-format
+msgid "Already exist another recasting move for this fiscal year (%r)                         please remove it before continue."
+msgstr "Ya existe otro movimiento para la refundición de cuentas resultados (%r) por favor eliminelo antes de continuar."
+
+#. module: account_fiscal_year_closing
+#: code:addons/account_fiscal_year_closing/wizard/fiscal_year_closing.py:693
+#, python-format
+msgid "At least one move isn't posted (%r), you have to validate all                             moves before continue"
+msgstr "Al menos un movimiento (%r), del año fiscal, no esta validado. Debe validarlos todos antes de continuar."
+
+#. module: account_fiscal_year_closing
+#: model:ir.ui.view,arch_db:account_fiscal_year_closing.account_fiscal_year_closing_wizard_view
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: account_fiscal_year_closing
+#: model:ir.model.fields,field_description:account_fiscal_year_closing.field_account_fiscal_year_closing_account_account_id
+msgid "Capital Acount"
+msgstr "Cuenta Capital"
+
+#. module: account_fiscal_year_closing
+#: code:addons/account_fiscal_year_closing/wizard/fiscal_year_closing.py:237
+#, python-format
+msgid "Closing Fiscal Year"
+msgstr "Cierre de año fiscal"
+
+#. module: account_fiscal_year_closing
+#: code:addons/account_fiscal_year_closing/wizard/fiscal_year_closing.py:505
+#, python-format
+msgid "Consolidation Process"
+msgstr "Proceso de pasaje a resultados acumulados"
+
+#. module: account_fiscal_year_closing
+#: code:addons/account_fiscal_year_closing/wizard/fiscal_year_closing.py:413
+#: code:addons/account_fiscal_year_closing/wizard/fiscal_year_closing.py:430
+#: model:ir.model.fields,field_description:account_fiscal_year_closing.field_account_fiscal_year_closing_consolidation_acc_move
+#, python-format
+msgid "Consolidation Results"
+msgstr "Pasaje a resultados acumulados"
+
+#. module: account_fiscal_year_closing
+#: model:ir.model.fields,field_description:account_fiscal_year_closing.field_account_move_consolidation_acc_move
+msgid "Consolidation Results Move"
+msgstr "Movimiento de pasaje a resultados acumulados"
+
+#. module: account_fiscal_year_closing
+#: model:ir.ui.view,arch_db:account_fiscal_year_closing.account_fiscal_year_closing_wizard_view
+msgid "Consolidation Resultus Process"
+msgstr "Proceso de pasaje a resultados acumulados"
+
+#. module: account_fiscal_year_closing
+#: model:ir.model.fields,field_description:account_fiscal_year_closing.field_account_fiscal_year_closing_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: account_fiscal_year_closing
+#: model:ir.model.fields,field_description:account_fiscal_year_closing.field_account_fiscal_year_closing_create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: account_fiscal_year_closing
+#: model:ir.model.fields,field_description:account_fiscal_year_closing.field_account_fiscal_year_closing_date_from
+msgid "Date From"
+msgstr "Desde"
+
+#. module: account_fiscal_year_closing
+#: model:ir.model.fields,field_description:account_fiscal_year_closing.field_account_fiscal_year_closing_date_to
+msgid "Date To"
+msgstr "Hasta"
+
+#. module: account_fiscal_year_closing
+#: model:ir.model.fields,field_description:account_fiscal_year_closing.field_account_fiscal_year_closing_display_name
+msgid "Display Name"
+msgstr "Mostrar Nombre"
+
+#. module: account_fiscal_year_closing
+#: model:ir.model.fields,help:account_fiscal_year_closing.field_account_fiscal_year_closing_date_to
+#: model:ir.model.fields,help:account_fiscal_year_closing.field_account_fiscal_year_closing_opening_date_to
+msgid "Ending Date, included in the fiscal year."
+msgstr "Fecha de Fin, incluída en el año fiscal."
+
+#. module: account_fiscal_year_closing
+#: model:ir.model.fields,field_description:account_fiscal_year_closing.field_account_fiscal_year_closing_closing_equity_move
+msgid "Equity Closing"
+msgstr "Cierre de cuentas patrimoniales"
+
+#. module: account_fiscal_year_closing
+#: code:addons/account_fiscal_year_closing/wizard/fiscal_year_closing.py:658
+#, python-format
+msgid "Equity Closing Exercise"
+msgstr "Ejercicio de cierre de cuentas patrimoniales"
+
+#. module: account_fiscal_year_closing
+#: model:ir.model.fields,field_description:account_fiscal_year_closing.field_account_move_closing_equity_move
+msgid "Equity Closing Move"
+msgstr "Movimiento de cierre de cuentas patrimoniales"
+
+#. module: account_fiscal_year_closing
+#: code:addons/account_fiscal_year_closing/wizard/fiscal_year_closing.py:512
+#: model:ir.ui.view,arch_db:account_fiscal_year_closing.account_fiscal_year_closing_wizard_view
+#, python-format
+msgid "Equity Closing Process"
+msgstr "Proceso de cierre de cuentas patrimoniales"
+
+#. module: account_fiscal_year_closing
+#: model:ir.ui.view,arch_db:account_fiscal_year_closing.account_fiscal_year_closing_wizard_view
+msgid "Equity Opening"
+msgstr "Apertura de cuentas patrimoniales"
+
+#. module: account_fiscal_year_closing
+#: code:addons/account_fiscal_year_closing/wizard/fiscal_year_closing.py:671
+#, python-format
+msgid "Equity Opening Exercise"
+msgstr "Ejercicio de apertura de cuentas patrimoniales"
+
+#. module: account_fiscal_year_closing
+#: code:addons/account_fiscal_year_closing/wizard/fiscal_year_closing.py:519
+#, python-format
+msgid "Equity Opening Process"
+msgstr "Proceso de apertura de cuentas patrimoniales"
+
+#. module: account_fiscal_year_closing
+#: model:ir.model,name:account_fiscal_year_closing.model_account_fiscal_year
+#: model:ir.model.fields,field_description:account_fiscal_year_closing.field_account_fiscal_year_closing_fiscal_year
+msgid "Fiscal Year"
+msgstr "Año Fiscal"
+
+#. module: account_fiscal_year_closing
+#: model:ir.model.fields,field_description:account_fiscal_year_closing.field_account_fiscal_year_fiscal_year_close
+msgid "Fiscal Year Close"
+msgstr "Año fiscal derrado"
+
+#. module: account_fiscal_year_closing
+#: model:ir.model.fields,field_description:account_fiscal_year_closing.field_account_fiscal_year_closing_fiscal_year_closing
+#: model:ir.ui.menu,name:account_fiscal_year_closing.account_fiscal_year_closing_wizard_menu
+msgid "Fiscal Year Closing"
+msgstr "Cierre de ejercicio fiscal"
+
+#. module: account_fiscal_year_closing
+#: model:ir.model.fields,field_description:account_fiscal_year_closing.field_account_move_fy_closing_acc_move
+msgid "Fiscal Year Closing Move"
+msgstr "Movimiento de cierre de año fiscal"
+
+#. module: account_fiscal_year_closing
+#: model:ir.model.fields,field_description:account_fiscal_year_closing.field_account_fiscal_year_closing_fiscal_year_opening
+msgid "Fiscal Year Opening"
+msgstr "Movimiento de apertura de año fiscal"
+
+#. module: account_fiscal_year_closing
+#: model:ir.model.fields,field_description:account_fiscal_year_closing.field_account_move_fy_opening_acc_move
+msgid "Fiscal Year Opening Move"
+msgstr "Movimiento de apertura de año fiscal"
+
+#. module: account_fiscal_year_closing
+#: code:addons/account_fiscal_year_closing/wizard/fiscal_year_closing.py:628
+#, python-format
+msgid "For this process you need create firts the closing equity move                 for this fiscal year."
+msgstr "Para este procedimiento primero debe crear el cierre de cuentas patrimoniales para el año fiscal."
+
+#. module: account_fiscal_year_closing
+#: code:addons/account_fiscal_year_closing/wizard/fiscal_year_closing.py:450
+#, python-format
+msgid "For this process you need to consolidation results move                 for this fiscal year."
+msgstr "Para realizar este proceso necesita estar creado el movimiento 'Pasaje a resultados acumulados' del año fiscal."
+
+#. module: account_fiscal_year_closing
+#: code:addons/account_fiscal_year_closing/wizard/fiscal_year_closing.py:387
+#, python-format
+msgid "For this process you need to recasting move                 for this fiscal year."
+msgstr "Para realizar este proceso necesita estar creado el movimiento 'Refundición de cuentas resultados' del año fiscal."
+
+#. module: account_fiscal_year_closing
+#: model:ir.model.fields,field_description:account_fiscal_year_closing.field_account_fiscal_year_closing_id
+msgid "ID"
+msgstr "ID"
+
+#. module: account_fiscal_year_closing
+#: model:ir.model,name:account_fiscal_year_closing.model_account_journal
+msgid "Journal"
+msgstr "Diario"
+
+#. module: account_fiscal_year_closing
+#: model:ir.model.fields,field_description:account_fiscal_year_closing.field_account_journal_equity_closing_journal
+msgid "Journal to closing equity exercise"
+msgstr "Diario para el proceso de cierre de cuentas patrimoniales"
+
+#. module: account_fiscal_year_closing
+#: model:ir.model.fields,field_description:account_fiscal_year_closing.field_account_journal_consolidation_results_journal
+msgid "Journal to consolidation results exercise"
+msgstr "Diario para el proceso de pasaje a resultados acumulados"
+
+#. module: account_fiscal_year_closing
+#: model:ir.model.fields,field_description:account_fiscal_year_closing.field_account_journal_equity_opening_journal
+msgid "Journal to opening fiscal year exercise"
+msgstr "Diario para el proceso de apertura de cuentas patrimoniales"
+
+#. module: account_fiscal_year_closing
+#: model:ir.model.fields,field_description:account_fiscal_year_closing.field_account_journal_recasting_journal
+msgid "Journal to recasting exercise"
+msgstr "Diario para el proceso de refundición"
+
+#. module: account_fiscal_year_closing
+#: model:ir.model.fields,field_description:account_fiscal_year_closing.field_account_fiscal_year_closing___last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: account_fiscal_year_closing
+#: model:ir.model.fields,field_description:account_fiscal_year_closing.field_account_fiscal_year_closing_write_uid
+msgid "Last Updated by"
+msgstr "Última actualización realizada por"
+
+#. module: account_fiscal_year_closing
+#: model:ir.model.fields,field_description:account_fiscal_year_closing.field_account_fiscal_year_closing_write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: account_fiscal_year_closing
+#: model:ir.model.fields,field_description:account_fiscal_year_closing.field_account_fiscal_year_closing_opening_date_from
+msgid "Opening Date From"
+msgstr "Desde"
+
+#. module: account_fiscal_year_closing
+#: model:ir.model.fields,field_description:account_fiscal_year_closing.field_account_fiscal_year_closing_opening_date_to
+msgid "Opening Date To"
+msgstr "Hasta"
+
+#. module: account_fiscal_year_closing
+#: model:ir.model.fields,field_description:account_fiscal_year_closing.field_account_fiscal_year_closing_opening_fiscal_year
+msgid "Opening Fiscal Year"
+msgstr "Año Fiscal de Apertura"
+
+#. module: account_fiscal_year_closing
+#: model:ir.model.fields,field_description:account_fiscal_year_closing.field_account_fiscal_year_closing_date_origin
+msgid "Origin date"
+msgstr "Fecha de Origen"
+
+#. module: account_fiscal_year_closing
+#: model:ir.model.fields,field_description:account_fiscal_year_closing.field_account_fiscal_year_closing_recasting_acc_move
+msgid "Recasting"
+msgstr "Refundición de cuentas resultado"
+
+#. module: account_fiscal_year_closing
+#: code:addons/account_fiscal_year_closing/wizard/fiscal_year_closing.py:350
+#: code:addons/account_fiscal_year_closing/wizard/fiscal_year_closing.py:664
+#, python-format
+msgid "Recasting Exercise"
+msgstr "Ejercicio de refundición de cuentas de resultado"
+
+#. module: account_fiscal_year_closing
+#: model:ir.model.fields,field_description:account_fiscal_year_closing.field_account_move_recasting_acc_move
+msgid "Recasting Move"
+msgstr "Movimiento de refundición de cuentas resultado"
+
+#. module: account_fiscal_year_closing
+#: code:addons/account_fiscal_year_closing/wizard/fiscal_year_closing.py:498
+#: model:ir.ui.view,arch_db:account_fiscal_year_closing.account_fiscal_year_closing_wizard_view
+#, python-format
+msgid "Recasting Process"
+msgstr "Proceso de refundición de cuentas de resultado"
+
+#. module: account_fiscal_year_closing
+#: model:ir.ui.view,arch_db:account_fiscal_year_closing.account_fiscal_year_closing_wizard_view
+msgid "Remove Process"
+msgstr "Reversión de Proceso"
+
+#. module: account_fiscal_year_closing
+#: model:ir.model.fields,help:account_fiscal_year_closing.field_account_fiscal_year_closing_date_from
+#: model:ir.model.fields,help:account_fiscal_year_closing.field_account_fiscal_year_closing_opening_date_from
+msgid "Start Date, included in the fiscal year."
+msgstr "Fecha de inicio, incluída en el año fiscal."
+
+#. module: account_fiscal_year_closing
+#: code:addons/account_fiscal_year_closing/wizard/fiscal_year_closing.py:209
+#, python-format
+msgid "The fiscal year (%r) was blocked."
+msgstr "El año fiscal (%r) fue cerrado."
+
+#. module: account_fiscal_year_closing
+#: code:addons/account_fiscal_year_closing/wizard/fiscal_year_closing.py:277
+#, python-format
+msgid "The move (%r) for the fiscal year (%r)                         was remove."
+msgstr "El movimiento (%r) del año fiscal (%r) fue eliminado."
+
+#. module: account_fiscal_year_closing
+#: code:addons/account_fiscal_year_closing/wizard/fiscal_year_closing.py:174
+#, python-format
+msgid "The opening date from in opening fiscal year                         have to be one day exactly after date to                             in closing fiscal year."
+msgstr "La fecha de inicio del año fiscal de apertura debe ser exactamente un día despues de la fecha de finalizacion del año fiscal de cierre"
+
+#. module: account_fiscal_year_closing
+#: code:addons/account_fiscal_year_closing/wizard/fiscal_year_closing.py:93
+#, python-format
+msgid "The origin date has to be in the same month (%s)                     and the same year (%s) that                     the date to from the fiscal year."
+msgstr "La fecha de origen debe ser en el mismo mes (%s) y año (%s) que la fecha final del año fiscal."
+
+#. module: account_fiscal_year_closing
+#: code:addons/account_fiscal_year_closing/wizard/fiscal_year_closing.py:294
+#, python-format
+msgid "There is not moves for the fiscal year (%r)"
+msgstr "No existen movimientos para el año fiscal (%r)"
+
+#. module: account_fiscal_year_closing
+#: code:addons/account_fiscal_year_closing/wizard/fiscal_year_closing.py:287
+#, python-format
+msgid "You can register move in the fiscal year (%r)"
+msgstr "No puede registrar movimientos en el año fiscal (%r)"
+
+#. module: account_fiscal_year_closing
+#: code:addons/account_fiscal_year_closing/models/account_move.py:52
+#, python-format
+msgid "You cannot create a move in closed period.             \n"
+"You first have to revert the closing process for this              fiscal year."
+msgstr "No puede crear movimientos en un periodo cerrado.\n"
+"Primero tendria que revertir el proceso de cierre para el año fiscal."
+
+#. module: account_fiscal_year_closing
+#: code:addons/account_fiscal_year_closing/wizard/fiscal_year_closing.py:332
+#, python-format
+msgid "You have to assign a account for the recasting exercise                         before continue."
+msgstr "Debe asignar una cuenta para el ajuste de refundición antes de continuar."
+
+#. module: account_fiscal_year_closing
+#: code:addons/account_fiscal_year_closing/wizard/fiscal_year_closing.py:524
+#, python-format
+msgid "You have to assign a journal for (%r)                         before continue."
+msgstr "Debe asignar un diario para (%r) antes de continuar"
+
+#. module: account_fiscal_year_closing
+#: code:addons/account_fiscal_year_closing/wizard/fiscal_year_closing.py:193
+#, python-format
+msgid "You have to choose a account                     for this process."
+msgstr "Debe seleccionar una cuenta capital para el proceso de pasaje a resultados acumulados."
+
+#. module: account_fiscal_year_closing
+#: code:addons/account_fiscal_year_closing/wizard/fiscal_year_closing.py:220
+#: code:addons/account_fiscal_year_closing/wizard/fiscal_year_closing.py:305
+#, python-format
+msgid "You have to select at lest one option."
+msgstr "Debe seleccionar al menos una opción."
+
+#. module: account_fiscal_year_closing
+#: model:ir.model,name:account_fiscal_year_closing.model_account_fiscal_year_closing
+msgid "account.fiscal.year.closing"
+msgstr "account.fiscal.year.closing"
+

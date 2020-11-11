@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="account_fiscal_year_closing_wizard_view" model="ir.ui.view">
+        <field name="name">Account fiscal year closing view</field>
+        <field name="model">account.fiscal.year.closing</field>
+        <field name="arch" type="xml">
+            <form string="Account fiscal year closing">
+                <group>
+                    <group>
+                        <field name="fiscal_year" options="{'no_open':True,'no_create':1,'no_create_edit':1}"/>
+                        <field name="account_account_id" options="{'no_open':True,'no_create':1,'no_create_edit':1}" attrs="{'invisible': [('consolidation_acc_move', '=', False)]}"/>
+                        <field name="date_origin" attrs="{'readonly': [('fiscal_year', '=', False)]}"/>
+                    </group>
+                    <group>
+                        <field name="date_from" attrs="{'invisible': [('fiscal_year', '=', False)]}" readonly="1"/>
+                        <field name="date_to" attrs="{'invisible': [('fiscal_year', '=', False)]}" readonly="1"/>
+                    </group>
+                </group>
+                <group>
+                    <p class="text-warning">
+                        <strong>
+                            <i class="fa fa-bell-o"/>
+                                The remove option is recursive.
+                        </strong>
+                    </p>
+                </group>
+                <group>
+                    <div class="row mt16 o_settings_container">
+                        <div class="col-xs-12 col-md-3 o_setting_box">
+                            <div class="o_setting_left_pane">
+                                <field name="recasting_acc_move"/>
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="recasting_acc_move"/>
+                                <div class="text-muted">
+                                    Recasting Process
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-3 o_setting_box">
+                            <div class="o_setting_left_pane">
+                                <field name="consolidation_acc_move"/>
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="consolidation_acc_move"/>
+                                <div class="text-muted">
+                                    Consolidation Resultus Process
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-3 o_setting_box">
+                            <div class="o_setting_left_pane">
+                                <field name="closing_equity_move"/>
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="closing_equity_move"/>
+                                <div class="text-muted">
+                                    Equity Closing Process
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-3 o_setting_box">
+                            <div class="o_setting_left_pane">
+                                <field name="fiscal_year_opening"/>
+                            </div>
+                            <div class="o_setting_right_pane">
+                                <label for="fiscal_year_opening" string="Equity Opening"/>
+                                <div class="text-muted">
+                                    Equity Opening
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </group>
+                <group attrs="{'invisible': [('fiscal_year_opening', '=', False)]}">
+                    <group>
+                        <field name="opening_fiscal_year" attrs="{'required': [('fiscal_year_opening', '=', True)]}" options="{'no_open':True,'no_create':1,'no_create_edit':1}"/>
+                        <field name="date_origin" readonly="1" force_save="1"/>
+                    </group>
+                    <group>
+                        <field name="opening_date_from" attrs="{'invisible': [('opening_fiscal_year', '=', False)]}" readonly="1"/>
+                        <field name="opening_date_to" attrs="{'invisible': [('opening_fiscal_year', '=', False)]}" readonly="1"/>
+                    </group>
+                </group>
+                <footer>
+                    <button name="confirm" string="Action Process" type="object" class="oe_highlight" />
+                    <button name="remove_moves" string="Remove Process" type="object" class="oe_highlight" />
+                    <button special="cancel" string="Cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <act_window id="account_fiscal_year_closing_wizard_action" name="Account fiscal year closing wizard" res_model="account.fiscal.year.closing" view_type="form" view_mode="form" target="new" />
+
+    <menuitem id="account_fiscal_year_closing_wizard_menu" name="Fiscal Year Closing" action="account_fiscal_year_closing_wizard_action" parent="account.menu_finance_entries_actions" sequence="40" groups="account.group_account_manager"/>
+
+</odoo>
