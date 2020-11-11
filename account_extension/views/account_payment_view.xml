@@ -1,0 +1,55 @@
+<odoo>
+    <record id="view_account_payment_form" model="ir.ui.view">
+        <field name="name">account.payment.form</field>
+        <field name="model">account.payment</field>
+        <field name="inherit_id" ref="account_payment_group.view_account_payment_form"/>
+        <field name="arch" type="xml">
+
+            <field name="payment_type_copy" position="replace">
+                <field name="payment_type_copy" widget="radio" attrs="{'readonly': [('state', '!=', 'draft')]}" groups="account_payment_group.group_choose_payment_type" invisible="1" />
+            </field>
+        </field>
+    </record>
+
+
+    <record id="view_account_payment_group_tree" model="ir.ui.view">
+        <field name="name">account.payment.tree</field>
+        <field name="model">account.payment.group</field>
+        <field name="inherit_id" ref="account_payment_group.view_account_payment_group_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='payments_amount']" position="after">
+                <field name="withholdings_summary" class='space_pre' />
+            </xpath>
+            <xpath expr="//field[@name='withholdings_summary']" position="after">
+                <field name="amount_total_without_withholdings" />
+            </xpath>
+            <xpath expr="//field[@name='amount_total_without_withholdings']" position="after">
+                <field name="payment_currency_id" class="text_center" />
+            </xpath>
+            <xpath expr="//field[@name='payment_currency_id']" position="after">
+                <field name="payment_currency_rate" class="text_center" />
+            </xpath>
+        </field>
+    </record>
+
+
+    <menuitem id="payment_lines" action="account.action_account_payments_payable" parent="account.account_reports_business_intelligence_menu" string="Payment Lines" sequence="7"/>
+
+
+    <record id="view_account_payment_tree" model="ir.ui.view">
+        <field name="name">account.payment.tree</field>
+        <field name="model">account.payment</field>
+        <field name="inherit_id" ref="account.view_account_payment_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='partner_id']" position="after">
+                <field name="main_id_number"/>
+            </xpath>
+            <xpath expr="//field[@name='amount']" position="before">
+                <field name="withholding_base_amount"/>
+            </xpath>
+            <xpath expr="//field[@name='amount']" position="after">
+                <field name="exchange_rate"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

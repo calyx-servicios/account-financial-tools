@@ -1,0 +1,466 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* account_financial_report_extension
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0-20191106\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-02-05 18:15+0000\n"
+"PO-Revision-Date: 2020-02-05 18:15+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: account_financial_report_extension
+#: code:addons/account_financial_report_extension/report/trial_balance_xlsx.py:191
+#: code:addons/account_financial_report_extension/report/trial_balance_xlsx.py:274
+#: code:addons/account_financial_report_extension/report/trial_balance_xlsx.py:309
+#: model:ir.model.fields,field_description:account_financial_report_extension.field_report_department_balance_department_account_ids
+#: model:ir.ui.view,arch_db:account_financial_report_extension.report_department_balance_lines_header
+#: model:ir.ui.view,arch_db:account_financial_report_extension.report_trial_balance_header_inhe
+#: model:ir.ui.view,arch_db:account_financial_report_extension.report_trial_balance_lines_header
+#, python-format
+msgid "Account"
+msgstr "Cuenta"
+
+#. module: account_financial_report_extension
+#: model:ir.actions.act_window,name:account_financial_report_extension.action_account_department_tree
+#: model:ir.ui.menu,name:account_financial_report_extension.menu_action_account_department_form
+#: model:ir.ui.view,arch_db:account_financial_report_extension.view_account_department_form
+#: model:ir.ui.view,arch_db:account_financial_report_extension.view_account_department_search
+#: model:ir.ui.view,arch_db:account_financial_report_extension.view_account_department_tree
+msgid "Account Department"
+msgstr "Account Department"
+
+#. module: account_financial_report_extension
+#: model:ir.ui.view,arch_db:account_financial_report_extension.view_account_department_search
+msgid "Account Departments"
+msgstr "Account Departments"
+
+#. module: account_financial_report_extension
+#: model:ir.ui.view,arch_db:account_financial_report_extension.report_trial_balance_accounts
+msgid "Account Name"
+msgstr "Nombre de Cuenta"
+
+#. module: account_financial_report_extension
+#: model:ir.model.fields,field_description:account_financial_report_extension.field_report_department_balance_department_balance
+msgid "Balance"
+msgstr "Balance"
+
+#. module: account_financial_report_extension
+#: model:ir.model.fields,field_description:account_financial_report_extension.field_report_trial_balance_account_balance_department_id
+msgid "Balance Department"
+msgstr "Balance Department"
+
+#. module: account_financial_report_extension
+#: model:ir.model.fields,field_description:account_financial_report_extension.field_trial_balance_report_wizard_by_department
+msgid "By Department"
+msgstr "By Department"
+
+#. module: account_financial_report_extension
+#: model:ir.model.fields,field_description:account_financial_report_extension.field_report_trial_balance_child_ids
+msgid "Child"
+msgstr "Child"
+
+#. module: account_financial_report_extension
+#: code:addons/account_financial_report_extension/report/trial_balance_xlsx.py:190
+#: code:addons/account_financial_report_extension/report/trial_balance_xlsx.py:273
+#: model:ir.ui.view,arch_db:account_financial_report_extension.report_trial_balance_header_inhe
+#: model:ir.ui.view,arch_db:account_financial_report_extension.report_trial_balance_lines_header
+#, python-format
+msgid "Code"
+msgstr "Código"
+
+#. module: account_financial_report_extension
+#: model:ir.model.fields,field_description:account_financial_report_extension.field_report_trial_balance_account_account_group_code_prefix
+msgid "Code Prefix"
+msgstr "Prefijo de código"
+
+#. module: account_financial_report_extension
+#: model:ir.model.fields,field_description:account_financial_report_extension.field_account_department_code_sufix
+#: model:ir.model.fields,field_description:account_financial_report_extension.field_report_department_balance_department_code_sufix
+msgid "Code Sufix"
+msgstr "Code Sufix"
+
+#. module: account_financial_report_extension
+#: model:ir.model.fields,field_description:account_financial_report_extension.field_account_department_company_id
+msgid "Company"
+msgstr "Compañía"
+
+#. module: account_financial_report_extension
+#: model:ir.model.fields,field_description:account_financial_report_extension.field_account_department_create_uid
+#: model:ir.model.fields,field_description:account_financial_report_extension.field_report_department_balance_department_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: account_financial_report_extension
+#: model:ir.model.fields,field_description:account_financial_report_extension.field_account_department_create_date
+#: model:ir.model.fields,field_description:account_financial_report_extension.field_report_department_balance_department_create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: account_financial_report_extension
+#: code:addons/account_financial_report_extension/report/trial_balance_xlsx.py:200
+#: code:addons/account_financial_report_extension/report/trial_balance_xlsx.py:241
+#: code:addons/account_financial_report_extension/report/trial_balance_xlsx.py:318
+#: model:ir.model.fields,field_description:account_financial_report_extension.field_report_department_balance_department_credit
+#: model:ir.ui.view,arch_db:account_financial_report_extension.report_department_balance_lines_header
+#: model:ir.ui.view,arch_db:account_financial_report_extension.report_trial_balance_header_inhe
+#, python-format
+msgid "Credit"
+msgstr "Haber"
+
+#. module: account_financial_report_extension
+#: code:addons/account_financial_report_extension/report/trial_balance_xlsx.py:215
+#: code:addons/account_financial_report_extension/report/trial_balance_xlsx.py:256
+#: code:addons/account_financial_report_extension/report/trial_balance_xlsx.py:333
+#: model:ir.ui.view,arch_db:account_financial_report_extension.report_department_balance_account
+#: model:ir.ui.view,arch_db:account_financial_report_extension.report_department_balance_lines_header
+#: model:ir.ui.view,arch_db:account_financial_report_extension.report_trial_balance_header_inhe
+#, python-format
+msgid "Cur."
+msgstr "Actual."
+
+#. module: account_financial_report_extension
+#: model:ir.model.fields,field_description:account_financial_report_extension.field_report_department_balance_department_currency_id
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: account_financial_report_extension
+#: model:ir.ui.view,arch_db:account_financial_report_extension.report_department_balance_filters
+#: model:ir.ui.view,arch_db:account_financial_report_extension.report_trial_balance_filters
+msgid "Date range filter"
+msgstr "Filtro periodo"
+
+#. module: account_financial_report_extension
+#: code:addons/account_financial_report_extension/report/trial_balance_xlsx.py:196
+#: code:addons/account_financial_report_extension/report/trial_balance_xlsx.py:237
+#: code:addons/account_financial_report_extension/report/trial_balance_xlsx.py:314
+#: model:ir.model.fields,field_description:account_financial_report_extension.field_report_department_balance_department_debit
+#: model:ir.ui.view,arch_db:account_financial_report_extension.report_department_balance_lines_header
+#: model:ir.ui.view,arch_db:account_financial_report_extension.report_trial_balance_header_inhe
+#, python-format
+msgid "Debit"
+msgstr "Debe"
+
+#. module: account_financial_report_extension
+#: code:addons/account_financial_report_extension/report/trial_balance_xlsx.py:308
+#: model:ir.model.fields,field_description:account_financial_report_extension.field_report_department_balance_department_department_id
+#: model:ir.model.fields,field_description:account_financial_report_extension.field_report_trial_balance_by_department
+#: model:ir.model.fields,field_description:account_financial_report_extension.field_report_trial_balance_department_ids
+#: model:ir.ui.view,arch_db:account_financial_report_extension.report_department_balance_lines_header
+#, python-format
+msgid "Department"
+msgstr "Departamento"
+
+#. module: account_financial_report_extension
+#: code:addons/account_financial_report_extension/report/trial_balance_xlsx.py:20
+#, python-format
+msgid "Department Balance"
+msgstr "Department Balance"
+
+#. module: account_financial_report_extension
+#: model:ir.ui.view,arch_db:account_financial_report_extension.report_department_balance_base
+msgid "Department Balance -"
+msgstr "Department Balance -"
+
+#. module: account_financial_report_extension
+#: model:ir.model.fields,field_description:account_financial_report_extension.field_account_department_display_name
+#: model:ir.model.fields,field_description:account_financial_report_extension.field_report_department_balance_department_display_name
+msgid "Display Name"
+msgstr "Mostrar Nombre"
+
+#. module: account_financial_report_extension
+#: code:addons/account_financial_report_extension/report/trial_balance_xlsx.py:208
+#: code:addons/account_financial_report_extension/report/trial_balance_xlsx.py:223
+#: code:addons/account_financial_report_extension/report/trial_balance_xlsx.py:249
+#: code:addons/account_financial_report_extension/report/trial_balance_xlsx.py:264
+#: code:addons/account_financial_report_extension/report/trial_balance_xlsx.py:291
+#: code:addons/account_financial_report_extension/report/trial_balance_xlsx.py:326
+#: code:addons/account_financial_report_extension/report/trial_balance_xlsx.py:341
+#: model:ir.ui.view,arch_db:account_financial_report_extension.report_department_balance_lines_header
+#: model:ir.ui.view,arch_db:account_financial_report_extension.report_trial_balance_header_inhe
+#: model:ir.ui.view,arch_db:account_financial_report_extension.report_trial_balance_lines_header
+#, python-format
+msgid "Ending balance"
+msgstr "Saldo final"
+
+#. module: account_financial_report_extension
+#: model:ir.ui.view,arch_db:account_financial_report_extension.report_department_balance_account
+#: model:ir.ui.view,arch_db:account_financial_report_extension.report_department_balance_lines_header
+#: model:ir.ui.view,arch_db:account_financial_report_extension.report_trial_balance_header_inhe
+msgid "Ending blance cur."
+msgstr "Saldo final."
+
+#. module: account_financial_report_extension
+#: model:ir.model.fields,field_description:account_financial_report_extension.field_report_trial_balance_filter_department_ids
+msgid "Filter Department"
+msgstr "Filter Department"
+
+#. module: account_financial_report_extension
+#: model:ir.model.fields,field_description:account_financial_report_extension.field_trial_balance_report_wizard_department_ids
+msgid "Filter departments"
+msgstr "Filter departments"
+
+#. module: account_financial_report_extension
+#: model:ir.model.fields,field_description:account_financial_report_extension.field_report_department_balance_department_final_balance
+#: model:ir.ui.view,arch_db:account_financial_report_extension.report_department_balance_footer
+msgid "Final Balance"
+msgstr "Total Saldo"
+
+#. module: account_financial_report_extension
+#: model:ir.model.fields,field_description:account_financial_report_extension.field_report_department_balance_department_final_balance_foreign_currency
+msgid "Final Balance Foreign Currency"
+msgstr "Saldo Final Moneda Extranjera"
+
+#. module: account_financial_report_extension
+#: model:ir.model.fields,field_description:account_financial_report_extension.field_report_department_balance_department_final_credit
+msgid "Final Credit"
+msgstr "Total Haber"
+
+#. module: account_financial_report_extension
+#: model:ir.model.fields,field_description:account_financial_report_extension.field_report_department_balance_department_final_debit
+msgid "Final Debit"
+msgstr "Total Debe"
+
+#. module: account_financial_report_extension
+#: model:ir.ui.view,arch_db:account_financial_report_extension.report_department_balance_filters
+#: model:ir.ui.view,arch_db:account_financial_report_extension.report_trial_balance_filters
+msgid "From:"
+msgstr "Desde:"
+
+#. module: account_financial_report_extension
+#: code:addons/account_financial_report_extension/report/trial_balance_xlsx.py:189
+#: code:addons/account_financial_report_extension/report/trial_balance_xlsx.py:307
+#: model:ir.ui.view,arch_db:account_financial_report_extension.report_department_balance_lines_header
+#, python-format
+msgid "Group"
+msgstr "Grupo"
+
+#. module: account_financial_report_extension
+#: model:ir.ui.view,arch_db:account_financial_report_extension.report_trial_balance_header_inhe
+msgid "Group Code"
+msgstr "Código de grupo"
+
+#. module: account_financial_report_extension
+#: model:ir.ui.view,arch_db:account_financial_report_extension.report_trial_balance_header_inhe
+msgid "Group Name"
+msgstr "Nombre de grupo"
+
+#. module: account_financial_report_extension
+#: code:addons/account_financial_report_extension/report/trial_balance_xlsx.py:188
+#, python-format
+msgid "Group code"
+msgstr "Código de grupo"
+
+#. module: account_financial_report_extension
+#: model:ir.model.fields,field_description:account_financial_report_extension.field_account_department_id
+#: model:ir.model.fields,field_description:account_financial_report_extension.field_report_department_balance_department_id
+msgid "ID"
+msgstr "ID"
+
+#. module: account_financial_report_extension
+#: model:ir.ui.view,arch_db:account_financial_report_extension.report_trial_balance_header_inhe
+msgid "Initial\n"
+"                        balance"
+msgstr "Saldo\n"
+"                        inicial"
+
+#. module: account_financial_report_extension
+#: model:ir.ui.view,arch_db:account_financial_report_extension.report_department_balance_lines_header
+#: model:ir.ui.view,arch_db:account_financial_report_extension.report_trial_balance_lines_header
+msgid "Initial\n"
+"                    balance"
+msgstr "Saldo\n"
+"                    inicial"
+
+#. module: account_financial_report_extension
+#: model:ir.model.fields,field_description:account_financial_report_extension.field_report_department_balance_department_initial_balance
+msgid "Initial Balance"
+msgstr "Saldo Inicial"
+
+#. module: account_financial_report_extension
+#: model:ir.model.fields,field_description:account_financial_report_extension.field_report_department_balance_department_initial_balance_foreign_currency
+msgid "Initial Balance Foreign Currency"
+msgstr "Saldo Inicial Moneda Extranjera"
+
+#. module: account_financial_report_extension
+#: model:ir.model.fields,field_description:account_financial_report_extension.field_report_department_balance_department_initial_credit
+msgid "Initial Credit"
+msgstr "Saldo inicial Haber"
+
+#. module: account_financial_report_extension
+#: model:ir.model.fields,field_description:account_financial_report_extension.field_report_department_balance_department_initial_debit
+msgid "Initial Debit"
+msgstr "Saldo inicial Debe"
+
+#. module: account_financial_report_extension
+#: code:addons/account_financial_report_extension/report/trial_balance_xlsx.py:192
+#: code:addons/account_financial_report_extension/report/trial_balance_xlsx.py:219
+#: code:addons/account_financial_report_extension/report/trial_balance_xlsx.py:233
+#: code:addons/account_financial_report_extension/report/trial_balance_xlsx.py:260
+#: code:addons/account_financial_report_extension/report/trial_balance_xlsx.py:275
+#: code:addons/account_financial_report_extension/report/trial_balance_xlsx.py:310
+#: code:addons/account_financial_report_extension/report/trial_balance_xlsx.py:337
+#, python-format
+msgid "Initial balance"
+msgstr "Initial balance"
+
+#. module: account_financial_report_extension
+#: model:ir.ui.view,arch_db:account_financial_report_extension.report_department_balance_account
+#: model:ir.ui.view,arch_db:account_financial_report_extension.report_department_balance_lines_header
+#: model:ir.ui.view,arch_db:account_financial_report_extension.report_trial_balance_header_inhe
+msgid "Initial blance cur."
+msgstr "Saldo inicial Act."
+
+#. module: account_financial_report_extension
+#: model:ir.model.fields,field_description:account_financial_report_extension.field_account_department___last_update
+#: model:ir.model.fields,field_description:account_financial_report_extension.field_report_department_balance_department___last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: account_financial_report_extension
+#: model:ir.model.fields,field_description:account_financial_report_extension.field_account_department_write_uid
+#: model:ir.model.fields,field_description:account_financial_report_extension.field_report_department_balance_department_write_uid
+msgid "Last Updated by"
+msgstr "Última actualización realizada por"
+
+#. module: account_financial_report_extension
+#: model:ir.model.fields,field_description:account_financial_report_extension.field_account_department_write_date
+#: model:ir.model.fields,field_description:account_financial_report_extension.field_report_department_balance_department_write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: account_financial_report_extension
+#: model:ir.model.fields,field_description:account_financial_report_extension.field_report_department_balance_department_level
+msgid "Level"
+msgstr "Nivel"
+
+#. module: account_financial_report_extension
+#: model:ir.model.fields,field_description:account_financial_report_extension.field_account_department_name
+#: model:ir.model.fields,field_description:account_financial_report_extension.field_report_department_balance_department_name
+#: model:ir.model.fields,field_description:account_financial_report_extension.field_report_trial_balance_account_account_gruop_name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: account_financial_report_extension
+#: model:ir.model.fields,field_description:account_financial_report_extension.field_report_trial_balance_by_group_sequence
+#: model:ir.model.fields,field_description:account_financial_report_extension.field_trial_balance_report_wizard_by_group_sequence
+msgid "Order by group sequence"
+msgstr "Order by group sequence"
+
+#. module: account_financial_report_extension
+#: model:ir.model.fields,field_description:account_financial_report_extension.field_report_trial_balance_parent_id
+msgid "Parent"
+msgstr "Padre"
+
+#. module: account_financial_report_extension
+#: code:addons/account_financial_report_extension/report/trial_balance_xlsx.py:232
+#: model:ir.ui.view,arch_db:account_financial_report_extension.report_trial_balance_header_inhe
+#, python-format
+msgid "Partner"
+msgstr "Empresa"
+
+#. module: account_financial_report_extension
+#: model:ir.model.fields,field_description:account_financial_report_extension.field_report_department_balance_department_period_balance
+msgid "Period Balance"
+msgstr "Saldo de Periodo"
+
+#. module: account_financial_report_extension
+#: code:addons/account_financial_report_extension/report/trial_balance_xlsx.py:204
+#: code:addons/account_financial_report_extension/report/trial_balance_xlsx.py:245
+#: code:addons/account_financial_report_extension/report/trial_balance_xlsx.py:322
+#: model:ir.ui.view,arch_db:account_financial_report_extension.report_department_balance_lines_header
+#: model:ir.ui.view,arch_db:account_financial_report_extension.report_trial_balance_header_inhe
+#, python-format
+msgid "Period balance"
+msgstr "Saldo de periodo"
+
+#. module: account_financial_report_extension
+#: model:ir.model.fields,field_description:account_financial_report_extension.field_report_department_balance_department_report_id
+msgid "Report"
+msgstr "Reporte"
+
+#. module: account_financial_report_extension
+#: model:ir.model.fields,field_description:account_financial_report_extension.field_account_group_sequence
+#: model:ir.model.fields,field_description:account_financial_report_extension.field_report_department_balance_department_sequence
+msgid "Sequence"
+msgstr "Secuencia"
+
+#. module: account_financial_report_extension
+#: model:ir.model.fields,field_description:account_financial_report_extension.field_report_trial_balance_by_month
+#: model:ir.model.fields,field_description:account_financial_report_extension.field_trial_balance_report_wizard_by_month
+msgid "Split by Month"
+msgstr "Split by Month"
+
+#. module: account_financial_report_extension
+#: sql_constraint:account.department:0
+msgid "The code sufix of the department must be unique per company !"
+msgstr "The code sufix of the department must be unique per company !"
+
+#. module: account_financial_report_extension
+#: model:ir.ui.view,arch_db:account_financial_report_extension.report_department_balance_filters
+#: model:ir.ui.view,arch_db:account_financial_report_extension.report_trial_balance_filters
+msgid "To:"
+msgstr "A:"
+
+#. module: account_financial_report_extension
+#: model:ir.ui.view,arch_db:account_financial_report_extension.report_trial_balance_by_month_base
+msgid "Trial Balance -"
+msgstr "Balance de Sumas y Saldos -"
+
+#. module: account_financial_report_extension
+#: model:ir.actions.report,name:account_financial_report_extension.action_report_department_balance_qweb
+msgid "Trial Balance By Department"
+msgstr "Trial Balance By Department"
+
+#. module: account_financial_report_extension
+#: model:ir.actions.report,name:account_financial_report_extension.action_report_trial_balance_by_month_qweb
+msgid "Trial Balance By Month"
+msgstr "Trial Balance By Month"
+
+#. module: account_financial_report_extension
+#: model:ir.model,name:account_financial_report_extension.model_trial_balance_report_wizard
+msgid "Trial Balance Report Wizard"
+msgstr "Asistente del informe de balance de sumas y saldos"
+
+#. module: account_financial_report_extension
+#: model:ir.model,name:account_financial_report_extension.model_account_department
+msgid "account.department"
+msgstr "account.department"
+
+#. module: account_financial_report_extension
+#: model:ir.model,name:account_financial_report_extension.model_account_group
+msgid "account.group"
+msgstr "cuenta.grupo"
+
+#. module: account_financial_report_extension
+#: code:addons/account_financial_report_extension/report/trial_balance_xlsx.py:285
+#, python-format
+msgid "period_balance"
+msgstr "period_balance"
+
+#. module: account_financial_report_extension
+#: model:ir.model,name:account_financial_report_extension.model_report_a_f_r_report_trial_balance_xlsx
+msgid "report.a_f_r.report_trial_balance_xlsx"
+msgstr "informe.a_f_r.informe_balance_sumas_y_saldos_xlsx"
+
+#. module: account_financial_report_extension
+#: model:ir.model,name:account_financial_report_extension.model_report_department_balance_department
+msgid "report_department_balance_department"
+msgstr "report_department_balance_department"
+
+#. module: account_financial_report_extension
+#: model:ir.model,name:account_financial_report_extension.model_report_trial_balance
+msgid "report_trial_balance"
+msgstr "informe_balance_de_sumas_y_saldos"
+
+#. module: account_financial_report_extension
+#: model:ir.model,name:account_financial_report_extension.model_report_trial_balance_account
+msgid "report_trial_balance_account"
+msgstr "informe_cuenta_balance_sumas_y_saldos"
+

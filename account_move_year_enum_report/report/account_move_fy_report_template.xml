@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="external_layout_account_fy_custom">
+
+        <div class="article o_report_layout_standard">
+            <t t-raw="0" />
+        </div>
+
+        <div class="footer">
+            <div class="row">
+                <div class="col-xs-12 text-right" style="font-size:9px">
+                    <ul class="list-inline">
+                        <li>
+                            <span class="page"/>
+                        </li>
+                        <li>/</li>
+                        <li>
+                            <span class="topage"/>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <template id="external_layout">
+        <!-- Multicompany -->
+        <t t-if="not o and doc">
+            <t t-set="o" t-value="doc"/>
+        </t>
+
+        <t t-if="o and 'company_id' in o">
+            <t t-set="company" t-value="o.company_id.sudo()"/>
+        </t>
+        <t t-if="not o or not 'company_id' in o">
+            <t t-set="company" t-value="res_company"/>
+        </t>
+        <t t-call="account_move_year_enum_report.external_layout_account_fy_custom">
+            <t t-raw="0"/>
+        </t>
+
+    </template>
+
+    <template id="report_account_fy_page">
+        <div class="row" style="margin-bottom:20px">
+            <div class="col-xs-4 text-left" style="padding-left: 40px;">
+                <img t-if="res_company.logo" t-att-src="'data:image/png;base64,%s' % to_text(res_company.logo)" style="height:100px;width:100px;"/>
+            </div>
+            <div class="col-xs-8 text-center" style="padding-top: 30px;">
+                <div class="row">
+                    <div class="col-xs-12 text-center">
+                        <span style="font-weight:bold; font-size:14px">Journal Ledger 
+                            <t t-if="not data['form'].get('by_period')">
+                                <span t-esc="data['form'].get('fiscal_year')"/>
+                            </t>
+                        </span>
+                    </div>
+                </div>
+                <t t-if="data['form'].get('by_period')">
+                    <div class="row">
+                        <div class="col-xs-6 text-right">
+                            Date From
+                            <br/>
+                            <span t-esc="datetime.datetime.strptime(data['form'].get('date_from'), '%Y-%m-%d').strftime('%d-%m-%Y')"/>
+                        </div>
+                        <div class="col-xs-6 text-left">
+                            Date To
+                            <br/>
+                            <span t-esc="datetime.datetime.strptime(data['form'].get('date_to'), '%Y-%m-%d').strftime('%d-%m-%Y')"/>
+                        </div>
+                    </div>
+                </t>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <table class="table" style="width: 95%;font-size: 9px;margin: 0 auto;text-align:center">
+                    <t t-foreach="docs" t-as="move">
+                        <tr style="font-size:10px;font-weight:bold;border-bottom: 1px solid black;border-top: 1px solid black;">
+                            <td colspan="2" style="width: 20%;border: none;">
+                                Move N° <span t-esc="move.numeration"/>
+                            </td>
+                            <td style="width: 35%;border: none;">
+                                <span t-esc="move.display_name"/>
+                            </td>
+                            <td style="width: 15%;border: none;">
+                                <span t-esc="datetime.datetime.strptime(move.date, '%Y-%m-%d').strftime('%d-%m-%Y')"/>
+                            </td>
+                            <td colspan="4" style="width: 30%;border: none;">Reference</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" style="border: none;"></td>
+                            <td style="border: none;">
+                                <span t-esc="move.partner_id.name" />
+                            </td>
+                            <td style="border: none;"></td>
+                            <td colspan="4" style="border: none;">
+                                <span t-esc="move.ref"/>
+                            </td>
+                        </tr>
+                        <tr style="font-weight:bold;">
+                            <td style="width: 9%;">Account Move Nº</td>
+                            <td style="width: 11%;">Account</td>
+                            <td style="width: 17%;">Account Name</td>
+                            <td style="width: 17%;">Move Description</td>
+                            <td style="width: 11%;">Currency Amount</td>
+                            <td style="width: 11%;">Currency</td>
+                            <td style="width: 12%;">Debit</td>
+                            <td style="width: 12%;">Credit</td>
+                        </tr>
+                        <t t-foreach="move.line_ids" t-as="line">
+                            <tr>
+                                <td style="width: 9%;">
+                                    <span t-esc="move.numeration"/>
+                                </td>
+                                <td style="width: 11%;">
+                                    <span t-esc="line.account_id.code"/>
+                                </td>
+                                <td style="width: 17%;">
+                                    <span t-esc="line.account_id.name"/>
+                                </td>
+                                <td style="width: 17%;">
+                                    <span t-esc="line.name"/>
+                                </td>
+                                <td style="width: 11%;">
+                                    <t t-if="line.amount_currency">
+                                        <span t-esc="'{0:,.2f}'.format(int(line.amount_currency))"/>
+                                    </t>
+                                </td>
+                                <td style="width: 11%;">
+                                    <t t-if="line.currency_id.name != 'ARS'">
+                                        <span t-esc="line.currency_id.name"/>
+                                    </t>
+                                </td>
+                                <td style="width: 12%;">
+                                    <t t-if="line.debit">
+                                        <span t-esc="'{0:,.2f}'.format(int(line.debit))"/>
+                                    </t>
+                                </td>
+                                <td style="width: 12%;">
+                                    <t t-if="line.credit">
+                                        <span t-esc="'{0:,.2f}'.format(int(line.credit))"/>
+                                    </t>
+                                </td>
+                            </tr>
+                        </t>
+                        <tr style="height: 30px;"></tr>
+                    </t>
+                </table>
+            </div>
+        </div>
+    </template>
+
+    <template id="report_account_fy_document">
+        <t t-call="account_move_year_enum_report.external_layout">
+            <t t-set="docs" t-value="docs.with_context({'lang':request.env.user.partner_id.lang})" />
+            <div class="page" style="font-size:10px">
+                <div class="oe_structure"/>
+                <div class="row">
+                    <div class="col-xs-12" style="width:95%;">
+                        <t t-call="account_move_year_enum_report.report_account_fy_page"/>
+                    </div>
+                </div>
+                <div class="oe_structure"/>
+            </div>
+        </t>
+    </template>
+
+    <template id="report_account_fy">
+        <t t-call="web.html_container">
+            <t t-call="account_move_year_enum_report.report_account_fy_document" t-lang="request.env.user.partner_id.lang"/>
+        </t>
+    </template>
+
+</odoo>

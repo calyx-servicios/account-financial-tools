@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="paperformat_account_fy_report" model="report.paperformat">
+        <field name="name">Reporte Año Fiscal</field>
+        <field name="default" eval="True"/>
+        <field name="format">custom</field>
+        <field name="page_height">297</field>
+        <field name="page_width">210</field>
+        <field name="orientation">Landscape</field>
+        <field name="margin_top">12</field>
+        <field name="margin_bottom">25</field>
+        <field name="margin_left">15</field>
+        <field name="margin_right">10</field>
+        <field name="header_line" eval="False"/>
+        <field name="dpi">90</field>
+    </record>
+    
+    <report 
+        id="action_report_account_fy"
+        string="Reporte Asientos por Año Fiscal"
+        model="account.move" 
+        report_type="qweb-pdf"
+        file="account_move_year_enum_report.report_account_fy" 
+        name="account_move_year_enum_report.report_account_fy"
+        paperformat="account_move_year_enum_report.paperformat_account_fy_report"
+        menu="False"
+        print_report_name="'Reporte Asientos por Año Fiscal'"
+    /> 
+</odoo>

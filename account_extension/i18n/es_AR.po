@@ -1,0 +1,125 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* account_extension
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-04-06 21:14+0000\n"
+"PO-Revision-Date: 2020-04-06 21:14+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: account_extension
+#: model:ir.model.fields,field_description:account_extension.field_account_payment_group_amount_total_without_withholdings
+msgid "Amount Without Withholdings"
+msgstr "Importe sin Retenciones"
+
+#. module: account_extension
+#: code:addons/account_extension/models/account_invoice.py:40
+#: code:addons/addons-calyx/odoo-calyx/account_extension/models/account_invoice.py:40
+#, python-format
+msgid "Check Number (%s) must be unique per Partner!"
+msgstr "Check Number (%s) must be unique per Partner!"
+
+#. module: account_extension
+#: selection:account.invoice.line.report,type_product:0
+msgid "Consumible"
+msgstr "Consumible"
+
+#. module: account_extension
+#: model:ir.model.fields,field_description:account_extension.field_account_invoice_line_report_currency_rate
+msgid "Currency Rate"
+msgstr "Tasa Monetaria"
+
+#. module: account_extension
+#: model:ir.model.fields,field_description:account_extension.field_account_invoice_line_report_date_invoice_service_from_
+msgid "Date Invoice from"
+msgstr "Fecha de factura desde"
+
+#. module: account_extension
+#: model:ir.model.fields,field_description:account_extension.field_account_invoice_line_report_date_invoice_service_to
+msgid "Date Invoice to"
+msgstr "Fecha de factura hasta"
+
+#. module: account_extension
+#: model:ir.model.fields,field_description:account_extension.field_account_invoice_line_report_description
+msgid "Description"
+msgstr "Descripción"
+
+#. module: account_extension
+#: code:addons/account_extension/models/account_payment_group.py:46
+#: code:addons/addons-calyx/odoo-calyx/account_extension/models/account_payment_group.py:46
+#, python-format
+msgid "El monto retenido para ganacias RG830 no puede ser menor a $240"
+msgstr "El monto retenido para ganacias RG830 no puede ser menor a $240"
+
+#. module: account_extension
+#: model:ir.model,name:account_extension.model_account_invoice
+msgid "Invoice"
+msgstr "Factura"
+
+#. module: account_extension
+#: model:ir.model,name:account_extension.model_account_invoice_line_report
+msgid "Invoices Statistics"
+msgstr "Estadísticas de facturas"
+
+#. module: account_extension
+#: model:res.partner.id_category,name:account_extension.NIF
+msgid "Número de Identificación Fiscal"
+msgstr "Número de Identificación Fiscal"
+
+#. module: account_extension
+#: model:ir.model,name:account_extension.model_account_payment_group
+msgid "Payment Group"
+msgstr "Grupo de Pagos"
+
+#. module: account_extension
+#: model:ir.ui.menu,name:account_extension.payment_lines
+msgid "Payments"
+msgstr "Pagos"
+
+#. module: account_extension
+#: selection:account.invoice.line.report,type_product:0
+msgid "Product"
+msgstr "Product"
+
+#. module: account_extension
+#: selection:account.invoice.line.report,type_product:0
+msgid "Service"
+msgstr "Service"
+
+#. module: account_extension
+#: model:ir.ui.menu,name:account_extension.menu_spreadsheet_reports
+msgid "Spreadsheet Accounting Reports"
+msgstr "Spreadsheet Accounting Reports"
+
+#. module: account_extension
+#: model:ir.model.fields,field_description:account_extension.field_account_invoice_line_report_type_product
+msgid "Type product"
+msgstr "Type product"
+
+#. module: account_extension
+#: model:ir.model.fields,field_description:account_extension.field_account_payment_group_withholdings_summary
+msgid "Withholdings Summary"
+msgstr "Sumario de Retenciones"
+
+#. module: account_extension
+#: code:addons/account_extension/models/account_payment_group.py:50
+#: code:addons/addons-calyx/odoo-calyx/account_extension/models/account_payment_group.py:50
+#, python-format
+msgid "You must include payment line that are not retentions"
+msgstr "You must include payment line that are not retentions"
+
+#. module: account_extension
+#: code:addons/account_extension/models/account_invoice.py:28
+#: code:addons/addons-calyx/odoo-calyx/account_extension/models/account_invoice.py:28
+#, python-format
+msgid "You put (%s) and Document Number must be whit a '-' in middle."
+msgstr "You put (%s) and Document Number must be whit a '-' in middle."
+

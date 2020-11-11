@@ -1,0 +1,190 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* account_general_ledger_customization
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-09-05 23:52+0000\n"
+"PO-Revision-Date: 2019-09-05 23:52+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: account_general_ledger_customization
+#: code:addons/account_general_ledger_customization/report/general_ledger_xlsx.py:29
+#: model:ir.ui.view,arch_db:account_general_ledger_customization.report_general_ledger_customization
+#, python-format
+msgid "Account"
+msgstr "Cuenta"
+
+#. module: account_general_ledger_customization
+#: code:addons/account_general_ledger_customization/report/general_ledger_xlsx.py:30
+#: model:ir.model.fields,field_description:account_general_ledger_customization.field_report_general_ledger_move_line_account_name
+#, python-format
+msgid "Account Name"
+msgstr "Cuenta"
+
+#. module: account_general_ledger_customization
+#: code:addons/account_general_ledger_customization/report/general_ledger_xlsx.py:69
+#: model:ir.ui.view,arch_db:account_general_ledger_customization.report_general_ledger_customization
+#, python-format
+msgid "Amount cur."
+msgstr "Total Act."
+
+#. module: account_general_ledger_customization
+#: model:ir.ui.view,arch_db:account_general_ledger_customization.report_general_ledger_customization
+msgid "Cost\n"
+"                            center"
+msgstr "Centro de Costos"
+
+#. module: account_general_ledger_customization
+#: code:addons/account_general_ledger_customization/report/general_ledger_xlsx.py:37
+#, python-format
+msgid "Cost center"
+msgstr "Cost center"
+
+#. module: account_general_ledger_customization
+#: code:addons/account_general_ledger_customization/report/general_ledger_xlsx.py:50
+#: model:ir.ui.view,arch_db:account_general_ledger_customization.report_general_ledger_customization
+#, python-format
+msgid "Credit"
+msgstr "Haber"
+
+#. module: account_general_ledger_customization
+#: code:addons/account_general_ledger_customization/report/general_ledger_xlsx.py:56
+#: model:ir.ui.view,arch_db:account_general_ledger_customization.report_general_ledger_customization
+#, python-format
+msgid "Cumul. Bal."
+msgstr "Saldo Acumu."
+
+#. module: account_general_ledger_customization
+#: code:addons/account_general_ledger_customization/report/general_ledger_xlsx.py:65
+#: model:ir.ui.view,arch_db:account_general_ledger_customization.report_general_ledger_customization
+#, python-format
+msgid "Cur."
+msgstr "Actual."
+
+#. module: account_general_ledger_customization
+#: code:addons/account_general_ledger_customization/report/general_ledger_xlsx.py:26
+#: model:ir.ui.view,arch_db:account_general_ledger_customization.report_general_ledger_customization
+#, python-format
+msgid "Date"
+msgstr "Fecha"
+
+#. module: account_general_ledger_customization
+#: code:addons/account_general_ledger_customization/report/general_ledger_xlsx.py:44
+#: model:ir.ui.view,arch_db:account_general_ledger_customization.report_general_ledger_customization
+#, python-format
+msgid "Debit"
+msgstr "Debe"
+
+#. module: account_general_ledger_customization
+#: model:ir.ui.view,arch_db:account_general_ledger_customization.report_general_ledger_customization
+msgid "Display"
+msgstr "Origen"
+
+#. module: account_general_ledger_customization
+#: code:addons/account_general_ledger_customization/report/general_ledger_xlsx.py:31
+#, python-format
+msgid "Display Name"
+msgstr "Origen"
+
+#. module: account_general_ledger_customization
+#: code:addons/account_general_ledger_customization/report/general_ledger_xlsx.py:27
+#: model:ir.ui.view,arch_db:account_general_ledger_customization.report_general_ledger_customization
+#, python-format
+msgid "Entry"
+msgstr "Entrada"
+
+#. module: account_general_ledger_customization
+#: model:ir.model.fields,field_description:account_general_ledger_customization.field_report_general_ledger_move_line_entry_name
+msgid "Entry Name"
+msgstr "Asiento"
+
+#. module: account_general_ledger_customization
+#: model:ir.ui.view,arch_db:account_general_ledger_customization.report_general_ledger_customization
+msgid "General Ledger -"
+msgstr "Libro mayor"
+
+#. module: account_general_ledger_customization
+#: model:ir.model,name:account_general_ledger_customization.model_general_ledger_report_wizard
+msgid "General Ledger Report Wizard"
+msgstr "Asistente de informe de Libro Mayor"
+
+#. module: account_general_ledger_customization
+#: code:addons/account_general_ledger_customization/report/general_ledger_xlsx.py:28
+#: model:ir.ui.view,arch_db:account_general_ledger_customization.report_general_ledger_customization
+#, python-format
+msgid "Journal"
+msgstr "Diario"
+
+#. module: account_general_ledger_customization
+#: code:addons/account_general_ledger_customization/report/general_ledger_xlsx.py:35
+#: model:ir.ui.view,arch_db:account_general_ledger_customization.report_general_ledger_customization
+#, python-format
+msgid "Partner"
+msgstr "Asociado"
+
+#. module: account_general_ledger_customization
+#: code:addons/account_general_ledger_customization/report/general_ledger_xlsx.py:43
+#: model:ir.ui.view,arch_db:account_general_ledger_customization.report_general_ledger_customization
+#, python-format
+msgid "Rec."
+msgstr "Num."
+
+#. module: account_general_ledger_customization
+#: model:ir.ui.view,arch_db:account_general_ledger_customization.report_general_ledger_customization
+msgid "Ref -\n"
+"                        Label"
+msgstr "Referencia"
+
+#. module: account_general_ledger_customization
+#: code:addons/account_general_ledger_customization/report/general_ledger_xlsx.py:36
+#, python-format
+msgid "Ref - Label"
+msgstr "Ref - Label"
+
+#. module: account_general_ledger_customization
+#: model:ir.model.fields,field_description:account_general_ledger_customization.field_report_general_ledger_show_ungroup
+msgid "Show Ungroup"
+msgstr "Mostrar desagrupado"
+
+#. module: account_general_ledger_customization
+#: code:addons/account_general_ledger_customization/report/general_ledger_xlsx.py:40
+#: model:ir.ui.view,arch_db:account_general_ledger_customization.report_general_ledger_customization
+#, python-format
+msgid "Tags"
+msgstr "Etiquetas"
+
+#. module: account_general_ledger_customization
+#: code:addons/account_general_ledger_customization/report/general_ledger_xlsx.py:32
+#: model:ir.ui.view,arch_db:account_general_ledger_customization.report_general_ledger_customization
+#, python-format
+msgid "Taxes"
+msgstr "Impuestos"
+
+#. module: account_general_ledger_customization
+#: model:ir.model.fields,field_description:account_general_ledger_customization.field_general_ledger_report_wizard_ungroup
+msgid "Ungroup"
+msgstr "Desagrupado"
+
+#. module: account_general_ledger_customization
+#: model:ir.model,name:account_general_ledger_customization.model_report_a_f_r_report_general_ledger_xlsx
+msgid "report.a_f_r.report_general_ledger_xlsx"
+msgstr "informe_a_f_r.libro_general_xlsx"
+
+#. module: account_general_ledger_customization
+#: model:ir.model,name:account_general_ledger_customization.model_report_general_ledger
+msgid "report_general_ledger"
+msgstr "informe_libro_mayor"
+
+#. module: account_general_ledger_customization
+#: model:ir.model,name:account_general_ledger_customization.model_report_general_ledger_move_line
+msgid "report_general_ledger_move_line"
+msgstr "informe_linea_asiento_libro_mayor"
+

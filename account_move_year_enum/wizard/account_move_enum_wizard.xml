@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <record id="account_move_enum_wizard_view" model="ir.ui.view">
+        <field name="name">Account Move Enum Wizard View</field>
+        <field name="model">account.move.enum.wizard</field>
+        <field name="arch" type="xml">
+            <form>
+                <group col="3">
+                    <field name="year_to_enum" required="1" options="{'no_open':True,'no_create':1,'no_create_edit':1}"/>
+                    <p class="text-warning">
+                    <strong>
+                        <i class="fa fa-bell-o"/> Account Manager can create a Fiscal Year at <br/> Configuration > Accounting > Fiscal Years.
+                    </strong>
+                    </p>
+                </group>
+                <footer>
+                    <button name="enumerate_account_move_by_year" string="Enumerate Account Moves" type="object" class="oe_highlight" />
+                    <button special="cancel" string="Cancel" />
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <act_window
+            id="account_move_enum_wizard_action"
+            name="Account Move Enum Wizard"
+            res_model="account.move.enum.wizard"
+            view_type="form"
+            view_mode="form"
+            target="new" />
+
+    <menuitem id="account_move_enum_wizard_menu" name="Account Move Enum" parent="account.account_account_menu" action="account_move_enum_wizard_action" />
+
+</odoo>

@@ -1,0 +1,249 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* account_move_year_enum
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-07-16 07:41+0000\n"
+"PO-Revision-Date: 2020-07-16 07:41+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: account_move_year_enum
+#: model:ir.ui.view,arch_db:account_move_year_enum.account_move_enum_wizard_view
+msgid "<strong>\n"
+"                        <i class=\"fa fa-bell-o\"/> Account Manager can create a Fiscal Year at <br/> Configuration &gt; Accounting &gt; Fiscal Years.\n"
+"                    </strong>"
+msgstr "<strong>\n"
+"                        <i class=\"fa fa-bell-o\"/> Responsable Contable puede crear Año Fiscal en <br/> Configuración &gt; Contabilidad &gt; Años Fiscales.\n"
+"                    </strong>"
+
+#. module: account_move_year_enum
+#: code:addons/account_move_year_enum/reports/account_move_fy_report_xlsx.py:164
+#, python-format
+msgid "Account"
+msgstr "Cuenta"
+
+#. module: account_move_year_enum
+#: model:ir.model,name:account_move_year_enum.model_account_move
+msgid "Account Entry"
+msgstr "Asiento Contable"
+
+#. module: account_move_year_enum
+#: model:ir.ui.menu,name:account_move_year_enum.account_move_enum_wizard_menu
+msgid "Account Move Enum"
+msgstr "Enumeración de Asientos"
+
+#. module: account_move_year_enum
+#: model:ir.actions.act_window,name:account_move_year_enum.account_move_enum_wizard_action
+msgid "Account Move Enum Wizard"
+msgstr "Asistente Enumeración de Asientos"
+
+#. module: account_move_year_enum
+#: model:ir.actions.act_window,name:account_move_year_enum.account_move_fy_report_wizard_action
+#: model:ir.actions.report,name:account_move_year_enum.account_move_fy_report_action
+#: model:ir.ui.menu,name:account_move_year_enum.account_move_fy_report_wizard_menu
+msgid "Account Move Fiscal Year Report"
+msgstr "Reporte Asientos por Año Fiscal"
+
+#. module: account_move_year_enum
+#: model:ir.model.fields,field_description:account_move_year_enum.field_account_move_numeration
+msgid "Account Move Number"
+msgstr "Número Asiento"
+
+#. module: account_move_year_enum
+#: code:addons/account_move_year_enum/reports/account_move_fy_report_xlsx.py:163
+#, python-format
+msgid "Account Move Nº"
+msgstr "Nª Asiento"
+
+#. module: account_move_year_enum
+#: code:addons/account_move_year_enum/reports/account_move_fy_report_xlsx.py:87
+#, python-format
+msgid "Account Moves"
+msgstr "Asientos"
+
+#. module: account_move_year_enum
+#: code:addons/account_move_year_enum/reports/account_move_fy_report_xlsx.py:165
+#, python-format
+msgid "Account Name"
+msgstr "Nombre Cuenta"
+
+#. module: account_move_year_enum
+#: model:ir.ui.view,arch_db:account_move_year_enum.account_move_enum_wizard_view
+#: model:ir.ui.view,arch_db:account_move_year_enum.account_move_fy_report_wizard_view
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: account_move_year_enum
+#: model:ir.model.fields,field_description:account_move_year_enum.field_account_move_enum_wizard_create_uid
+#: model:ir.model.fields,field_description:account_move_year_enum.field_account_move_fiscal_year_report_wizard_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: account_move_year_enum
+#: model:ir.model.fields,field_description:account_move_year_enum.field_account_move_enum_wizard_create_date
+#: model:ir.model.fields,field_description:account_move_year_enum.field_account_move_fiscal_year_report_wizard_create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: account_move_year_enum
+#: code:addons/account_move_year_enum/reports/account_move_fy_report_xlsx.py:170
+#, python-format
+msgid "Credit"
+msgstr "Haber"
+
+#. module: account_move_year_enum
+#: code:addons/account_move_year_enum/reports/account_move_fy_report_xlsx.py:168
+#, python-format
+msgid "Currency"
+msgstr "Moneda"
+
+#. module: account_move_year_enum
+#: code:addons/account_move_year_enum/reports/account_move_fy_report_xlsx.py:167
+#, python-format
+msgid "Currency Amount"
+msgstr "Importe en moneda"
+
+#. module: account_move_year_enum
+#: code:addons/account_move_year_enum/reports/account_move_fy_report_xlsx.py:112
+#: model:ir.model.fields,field_description:account_move_year_enum.field_account_move_fiscal_year_report_wizard_date_from
+#, python-format
+msgid "Date From"
+msgstr "Fecha inicio"
+
+#. module: account_move_year_enum
+#: model:ir.model.fields,field_description:account_move_year_enum.field_account_move_fiscal_year_report_wizard_date_to
+msgid "Date To"
+msgstr "Fecha hasta"
+
+#. module: account_move_year_enum
+#: code:addons/account_move_year_enum/reports/account_move_fy_report_xlsx.py:113
+#, python-format
+msgid "Date to"
+msgstr "Fecha hasta"
+
+#. module: account_move_year_enum
+#: code:addons/account_move_year_enum/reports/account_move_fy_report_xlsx.py:169
+#, python-format
+msgid "Debit"
+msgstr "Debe"
+
+#. module: account_move_year_enum
+#: model:ir.model.fields,field_description:account_move_year_enum.field_account_move_enum_wizard_display_name
+#: model:ir.model.fields,field_description:account_move_year_enum.field_account_move_fiscal_year_report_wizard_display_name
+#: model:ir.model.fields,field_description:account_move_year_enum.field_report_account_move_fiscal_year_id_account_move_fy_report_xlsx_display_name
+msgid "Display Name"
+msgstr "Mostrar Nombre"
+
+#. module: account_move_year_enum
+#: model:ir.ui.view,arch_db:account_move_year_enum.account_move_enum_wizard_view
+msgid "Enumerate Account Moves"
+msgstr "Enumerar Asientos"
+
+#. module: account_move_year_enum
+#: model:ir.model.fields,field_description:account_move_year_enum.field_account_move_fiscal_year_report_wizard_by_period
+msgid "Filter by period"
+msgstr "Filtrar por período"
+
+#. module: account_move_year_enum
+#: model:ir.model.fields,field_description:account_move_year_enum.field_account_move_fiscal_year
+#: model:ir.model.fields,field_description:account_move_year_enum.field_account_move_fiscal_year_report_wizard_fiscal_year
+msgid "Fiscal Year"
+msgstr "Año Fiscal"
+
+#. module: account_move_year_enum
+#: model:ir.model.fields,field_description:account_move_year_enum.field_account_move_enum_wizard_year_to_enum
+msgid "Fiscal Year To Enumerate"
+msgstr "Año Fiscal a Enumerar"
+
+#. module: account_move_year_enum
+#: model:ir.model.fields,field_description:account_move_year_enum.field_account_move_enum_wizard_id
+#: model:ir.model.fields,field_description:account_move_year_enum.field_account_move_fiscal_year_report_wizard_id
+#: model:ir.model.fields,field_description:account_move_year_enum.field_report_account_move_fiscal_year_id_account_move_fy_report_xlsx_id
+msgid "ID"
+msgstr "ID"
+
+#. module: account_move_year_enum
+#: code:addons/account_move_year_enum/reports/account_move_fy_report_xlsx.py:110
+#, python-format
+msgid "Journal Ledger"
+msgstr "Libro Diario"
+
+#. module: account_move_year_enum
+#: code:addons/account_move_year_enum/reports/account_move_fy_report_xlsx.py:127
+#, python-format
+msgid "Journal Ledger %s"
+msgstr "Libro Diario %s"
+
+#. module: account_move_year_enum
+#: model:ir.model.fields,field_description:account_move_year_enum.field_account_move_enum_wizard___last_update
+#: model:ir.model.fields,field_description:account_move_year_enum.field_account_move_fiscal_year_report_wizard___last_update
+#: model:ir.model.fields,field_description:account_move_year_enum.field_report_account_move_fiscal_year_id_account_move_fy_report_xlsx___last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: account_move_year_enum
+#: model:ir.model.fields,field_description:account_move_year_enum.field_account_move_enum_wizard_write_uid
+#: model:ir.model.fields,field_description:account_move_year_enum.field_account_move_fiscal_year_report_wizard_write_uid
+msgid "Last Updated by"
+msgstr "Última actualización realizada por"
+
+#. module: account_move_year_enum
+#: model:ir.model.fields,field_description:account_move_year_enum.field_account_move_enum_wizard_write_date
+#: model:ir.model.fields,field_description:account_move_year_enum.field_account_move_fiscal_year_report_wizard_write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: account_move_year_enum
+#: code:addons/account_move_year_enum/reports/account_move_fy_report_xlsx.py:166
+#, python-format
+msgid "Move Description"
+msgstr "Descripción Asiento"
+
+#. module: account_move_year_enum
+#: code:addons/account_move_year_enum/reports/account_move_fy_report_xlsx.py:146
+#, python-format
+msgid "Move N° {}"
+msgstr "Asiento N° {}"
+
+#. module: account_move_year_enum
+#: model:ir.ui.view,arch_db:account_move_year_enum.account_move_fy_report_wizard_view
+msgid "Print XLSX"
+msgstr "Imprimir XLSX"
+
+#. module: account_move_year_enum
+#: code:addons/account_move_year_enum/reports/account_move_fy_report_xlsx.py:150
+#, python-format
+msgid "Reference"
+msgstr "Referencia"
+
+#. module: account_move_year_enum
+#: code:addons/account_move_year_enum/models/account_move.py:44
+#, python-format
+msgid "You have to create a Fiscal Year to assign %s year to an account move.\n"
+"Go To Configuration > Accounting > Fiscal Years"
+msgstr "Tienes que crear un Año Fiscal para asignar el año %s a un asiento contable.\n"
+"Ir a Configuración > Contabilidad > Años Fiscales"
+
+#. module: account_move_year_enum
+#: model:ir.model,name:account_move_year_enum.model_account_move_enum_wizard
+msgid "account.move.enum.wizard"
+msgstr "account.move.enum.wizard"
+
+#. module: account_move_year_enum
+#: model:ir.model,name:account_move_year_enum.model_account_move_fiscal_year_report_wizard
+msgid "account.move.fiscal.year.report.wizard"
+msgstr "account.move.fiscal.year.report.wizard"
+
+#. module: account_move_year_enum
+#: model:ir.model,name:account_move_year_enum.model_report_account_move_fiscal_year_id_account_move_fy_report_xlsx
+msgid "report.account_move_fiscal_year_id.account_move_fy_report_xlsx"
+msgstr "report.account_move_fiscal_year_id.account_move_fy_report_xlsx"
+
