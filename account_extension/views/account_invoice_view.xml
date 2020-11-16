@@ -44,7 +44,7 @@
           <attribute name="options">{'no_open': True}</attribute>
         </xpath>
         <xpath expr="//field[@name='account_id']" position="attributes">
-          <attribute name="readonly">True</attribute>
+          <attribute name="readonly">False</attribute>
         </xpath>
         <xpath expr="//field[@name='account_id']" position="attributes">
           <attribute name="force_save">True</attribute>
