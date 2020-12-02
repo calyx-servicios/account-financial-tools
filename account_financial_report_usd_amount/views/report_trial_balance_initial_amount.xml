@@ -10,6 +10,7 @@
                 <field name="account_name" />
                 <field name="account_type" invisible="True"/>
                 <field name="amount" />
+                <field name="date" />
                 <field name="state" />
             </tree>
         </field>
@@ -29,6 +30,7 @@
                     <group>
                         <group>
                             <field name="account_id" options="{'no_create': True, 'no_create_edit':1}"/>
+                            <field name="date" />
                             <field name="account_name" invisible="True"/>
                             <field name="account_type" invisible="True"/>
                         </group>
