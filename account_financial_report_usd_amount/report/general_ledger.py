@@ -38,6 +38,7 @@ class GeneralLedgerReport(models.TransientModel):
     def _compute_extra_initial_balance_usd(self):
         rgla = self.env["report_general_ledger_account"]
         date_init = self.date_from
+
         for acc in rgla.search([("report_id", "=", self.id)]):
             query_update_account_params = (
                 acc.account_id.id,
@@ -53,3 +54,10 @@ class GeneralLedgerReport(models.TransientModel):
             if rtbi:
                 extra_initial_balance = rtbi[0]
                 acc.initial_balance = extra_initial_balance
+                custom_balance = (
+                    acc.final_debit - acc.initial_debit
+                ) - (acc.final_credit - acc.initial_credit)
+                acc.period_balance = custom_balance
+                acc.final_balance = (
+                    extra_initial_balance + custom_balance
+                )
