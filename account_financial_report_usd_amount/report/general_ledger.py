@@ -37,15 +37,19 @@ class GeneralLedgerReport(models.TransientModel):
 
     def _compute_extra_initial_balance_usd(self):
         rgla = self.env["report_general_ledger_account"]
+        date_init = self.date_from
         for acc in rgla.search([("report_id", "=", self.id)]):
-            query_update_account_params = (acc.account_id.id,)
+            query_update_account_params = (
+                acc.account_id.id,
+                date_init,
+            )
             rtbi_query = """
             SELECT amount FROM report_trial_balance_initial_amount 
             rtb WHERE rtb.account_id = %s AND rtb.state = 'done'
+            AND date < %s
             """
             self.env.cr.execute(rtbi_query, query_update_account_params)
             rtbi = self.env.cr.fetchone()
             if rtbi:
                 extra_initial_balance = rtbi[0]
-                acc.initial_balance += extra_initial_balance
-                acc.final_balance += extra_initial_balance
+                acc.initial_balance = extra_initial_balance
