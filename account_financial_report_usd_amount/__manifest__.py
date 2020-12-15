@@ -18,10 +18,12 @@
         "account",
         "account_financial_report",
         "web_notify",
+        "account_ux",
     ],
     "data": [
         "security/ir.model.access.csv",
         "views/report_trial_balance_initial_amount.xml",
         "wizard/trial_balance_wizard.xml",
+        "data/account_diff_exchange_rate.xml",
     ],
 }

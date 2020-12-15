@@ -25,6 +25,9 @@ class GeneralLedgerReport(models.TransientModel):
             self._compute_extra_initial_balance_usd()
 
     def _compute_amount_balance_usd(self):
+        """
+        Change the amounts to USD with the rate.
+        """
         rgla = self.env["report_general_ledger_account"]
         exch_rate = self.exchange_rate_amount
         for acc in rgla.search([("report_id", "=", self.id)]):
@@ -36,6 +39,10 @@ class GeneralLedgerReport(models.TransientModel):
             acc.final_balance = acc.final_balance / exch_rate
 
     def _compute_extra_initial_balance_usd(self):
+        """
+        Update the initial balance of the accounts with the amounts in
+        report_trial_balance_initial_amount
+        """
         rgla = self.env["report_general_ledger_account"]
         date_init = self.date_from
 
