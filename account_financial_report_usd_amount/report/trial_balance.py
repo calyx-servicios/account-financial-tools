@@ -45,39 +45,45 @@ class TrialBalanceReportCompute(models.TransientModel):
             "account_financial_report_usd_amount.account_diff_exchange_rate"
         )
 
-        for line in rtba_obj.search([("report_id", "=", self.id)]):
-            if line.final_balance == 0.0:
-                continue
-            else:
-                final_balance_total += line.final_balance
-                continue
+        if acc_diff_exchange:
 
-        debit = (
-            final_balance_total if final_balance_total < 0.0 else 0.0
-        )
-        credit = (
-            final_balance_total if final_balance_total > 0.0 else 0.0
-        )
-        if debit or credit != 0.0:
-            debit_sign = debit * (-1) if debit < 0.0 else debit
-            rtba_params = (
-                0.0,
-                debit_sign,
-                credit,
-                (debit_sign - credit),
-                (debit_sign - credit),
-                self.id,
-                acc_diff_exchange.id,
+            for line in rtba_obj.search([("report_id", "=", self.id)]):
+                if line.final_balance == 0.0:
+                    continue
+                else:
+                    final_balance_total += line.final_balance
+                    continue
+
+            debit = (
+                final_balance_total
+                if final_balance_total < 0.0
+                else 0.0
             )
+            credit = (
+                final_balance_total
+                if final_balance_total > 0.0
+                else 0.0
+            )
+            if debit or credit != 0.0:
+                debit_sign = debit * (-1) if debit < 0.0 else debit
+                rtba_params = (
+                    0.0,
+                    debit_sign,
+                    credit,
+                    (debit_sign - credit),
+                    (debit_sign - credit),
+                    self.id,
+                    acc_diff_exchange.id,
+                )
 
-            rtba_query = """
-            UPDATE report_trial_balance_account
-            SET
-            initial_balance = %s,
-            debit = %s,
-            credit = %s,
-            period_balance = %s,
-            final_balance = %s
-            WHERE report_id = %s AND account_id = %s
-            """
-            self.env.cr.execute(rtba_query, rtba_params)
+                rtba_query = """
+                UPDATE report_trial_balance_account
+                SET
+                initial_balance = %s,
+                debit = %s,
+                credit = %s,
+                period_balance = %s,
+                final_balance = %s
+                WHERE report_id = %s AND account_id = %s
+                """
+                self.env.cr.execute(rtba_query, rtba_params)
