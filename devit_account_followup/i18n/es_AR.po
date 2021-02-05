@@ -1,0 +1,1443 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* devit_account_followup
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-02-01 14:35+0000\n"
+"PO-Revision-Date: 2021-02-01 13:14-0300\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: es_AR\n"
+"X-Generator: Poedit 2.4.2\n"
+
+#. module: devit_account_followup
+#: model:devit_account_followup.followup.line,description:devit_account_followup.demo_followup_line3
+msgid ""
+"\n"
+"                Dear %(partner_name)s,\n"
+"\n"
+"                Despite several reminders, your account is still not settled.\n"
+"\n"
+"                Unless full payment is made in next 8 days, then legal action\n"
+"                for the recovery of the debt will be taken without further\n"
+"                notice.\n"
+"\n"
+"                I trust that this action will prove unnecessary and details of\n"
+"                due payments is printed below.\n"
+"\n"
+"                In case of any queries concerning this matter, do not hesitate\n"
+"                to contact our accounting department.\n"
+"\n"
+"                Best Regards,\n"
+"            "
+msgstr ""
+"\n"
+"                Dear %(partner_name)s,\n"
+"\n"
+"                Despite several reminders, your account is still not settled.\n"
+"\n"
+"                Unless full payment is made in next 8 days, then legal action\n"
+"                for the recovery of the debt will be taken without further\n"
+"                notice.\n"
+"\n"
+"                I trust that this action will prove unnecessary and details of\n"
+"                due payments is printed below.\n"
+"\n"
+"                In case of any queries concerning this matter, do not hesitate\n"
+"                to contact our accounting department.\n"
+"\n"
+"                Best Regards,\n"
+"            "
+
+#. module: devit_account_followup
+#: model:devit_account_followup.followup.line,description:devit_account_followup.demo_followup_line1
+msgid ""
+"\n"
+"                Dear %(partner_name)s,\n"
+"\n"
+"                Exception made if there was a mistake of ours, it seems that\n"
+"                the following amount stays unpaid. Please, take appropriate\n"
+"                measures in order to carry out this payment in the next 8 days.\n"
+"\n"
+"                Would your payment have been carried out after this mail was\n"
+"                sent, please ignore this message. Do not hesitate to contact\n"
+"                our accounting department.\n"
+"\n"
+"                Best Regards,\n"
+"            "
+msgstr ""
+"\n"
+"                Dear %(partner_name)s,\n"
+"\n"
+"                Exception made if there was a mistake of ours, it seems that\n"
+"                the following amount stays unpaid. Please, take appropriate\n"
+"                measures in order to carry out this payment in the next 8 days.\n"
+"\n"
+"                Would your payment have been carried out after this mail was\n"
+"                sent, please ignore this message. Do not hesitate to contact\n"
+"                our accounting department.\n"
+"\n"
+"                Best Regards,\n"
+"            "
+
+#. module: devit_account_followup
+#: model:devit_account_followup.followup.line,description:devit_account_followup.demo_followup_line2
+msgid ""
+"\n"
+"                Dear %(partner_name)s,\n"
+"\n"
+"                We are disappointed to see that despite sending a reminder,\n"
+"                that your account is now seriously overdue.\n"
+"\n"
+"                It is essential that immediate payment is made, otherwise we\n"
+"                will have to consider placing a stop on your account which\n"
+"                means that we will no longer be able to supply your company\n"
+"                with (goods/services).\n"
+"                Please, take appropriate measures in order to carry out this\n"
+"                payment in the next 8 days.\n"
+"\n"
+"                If there is a problem with paying invoice that we are not aware\n"
+"                of, do not hesitate to contact our accounting department, so\n"
+"                that we can resolve the matter quickly.\n"
+"\n"
+"                Details of due payments is printed below.\n"
+"\n"
+"                Best Regards,\n"
+"            "
+msgstr ""
+"\n"
+"                Dear %(partner_name)s,\n"
+"\n"
+"                We are disappointed to see that despite sending a reminder,\n"
+"                that your account is now seriously overdue.\n"
+"\n"
+"                It is essential that immediate payment is made, otherwise we\n"
+"                will have to consider placing a stop on your account which\n"
+"                means that we will no longer be able to supply your company\n"
+"                with (goods/services).\n"
+"                Please, take appropriate measures in order to carry out this\n"
+"                payment in the next 8 days.\n"
+"\n"
+"                If there is a problem with paying invoice that we are not aware\n"
+"                of, do not hesitate to contact our accounting department, so\n"
+"                that we can resolve the matter quickly.\n"
+"\n"
+"                Details of due payments is printed below.\n"
+"\n"
+"                Best Regards,\n"
+"            "
+
+#. module: devit_account_followup
+#: model:mail.template,body_html:devit_account_followup.email_template_devit_account_followup_level2
+msgid ""
+"\n"
+"<div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34); background-color: rgb(255, 255, 255); \">\n"
+"    \n"
+"    <p>Dear ${object.name},</p>\n"
+"    <p>\n"
+"    Despite several reminders, your account is still not settled.\n"
+"Unless full payment is made in next 8 days, legal action for the recovery of the debt will be taken without\n"
+"further notice.\n"
+"I trust that this action will prove unnecessary and details of due payments is printed below.\n"
+"In case of any queries concerning this matter, do not hesitate to contact our accounting department.\n"
+"</p>\n"
+"<br/>\n"
+"Best Regards,\n"
+"<br/>\n"
+"<br/>\n"
+"${user.name}\n"
+"<br/>\n"
+"<br/>\n"
+"\n"
+"\n"
+"${object.get_followup_table_html() | safe}\n"
+"\n"
+"    <br/>\n"
+"\n"
+"</div>\n"
+"            "
+msgstr ""
+"\n"
+"<div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34); background-color: rgb(255, 255, 255); \">\n"
+"    \n"
+"    <p>Dear ${object.name},</p>\n"
+"    <p>\n"
+"    Despite several reminders, your account is still not settled.\n"
+"Unless full payment is made in next 8 days, legal action for the recovery of the debt will be taken without\n"
+"further notice.\n"
+"I trust that this action will prove unnecessary and details of due payments is printed below.\n"
+"In case of any queries concerning this matter, do not hesitate to contact our accounting department.\n"
+"</p>\n"
+"<br/>\n"
+"Best Regards,\n"
+"<br/>\n"
+"<br/>\n"
+"${user.name}\n"
+"<br/>\n"
+"<br/>\n"
+"\n"
+"\n"
+"${object.get_followup_table_html() | safe}\n"
+"\n"
+"    <br/>\n"
+"\n"
+"</div>\n"
+"            "
+
+#. module: devit_account_followup
+#: model:mail.template,body_html:devit_account_followup.email_template_devit_account_followup_default
+msgid ""
+"\n"
+"<div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34); background-color: rgb(255, 255, 255); \">\n"
+"    \n"
+"    <p>Dear ${object.name},</p>\n"
+"    <p>\n"
+"    Exception made if there was a mistake of ours, it seems that the following amount stays unpaid. Please, take\n"
+"appropriate measures in order to carry out this payment in the next 8 days.\n"
+"Would your payment have been carried out after this mail was sent, please ignore this message. Do not hesitate to\n"
+"contact our accounting department.\n"
+"    </p>\n"
+"<br/>\n"
+"Best Regards,\n"
+"<br/>\n"
+"<br/>\n"
+"${user.name}\n"
+"<br/>\n"
+"<br/>\n"
+"\n"
+"${object.get_followup_table_html() | safe}\n"
+"\n"
+"<br/>\n"
+"</div>\n"
+"            "
+msgstr ""
+"\n"
+"<div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34); background-color: rgb(255, 255, 255); \">\n"
+"    \n"
+"    <p>Dear ${object.name},</p>\n"
+"    <p>\n"
+"    Exception made if there was a mistake of ours, it seems that the following amount stays unpaid. Please, take\n"
+"appropriate measures in order to carry out this payment in the next 8 days.\n"
+"Would your payment have been carried out after this mail was sent, please ignore this message. Do not hesitate to\n"
+"contact our accounting department.\n"
+"    </p>\n"
+"<br/>\n"
+"Best Regards,\n"
+"<br/>\n"
+"<br/>\n"
+"${user.name}\n"
+"<br/>\n"
+"<br/>\n"
+"\n"
+"${object.get_followup_table_html() | safe}\n"
+"\n"
+"<br/>\n"
+"</div>\n"
+"            "
+
+#. module: devit_account_followup
+#: model:mail.template,body_html:devit_account_followup.email_template_devit_account_followup_level1
+msgid ""
+"\n"
+"<div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34); background-color: rgb(255, 255, 255); \">\n"
+"    \n"
+"    <p>Dear ${object.name},</p>\n"
+"   <p>\n"
+"    We are disappointed to see that despite sending a reminder, that your account is now seriously overdue.\n"
+"It is essential that immediate payment is made, otherwise we will have to consider placing a stop on your account\n"
+"which means that we will no longer be able to supply your company with (goods/services).\n"
+"Please, take appropriate measures in order to carry out this payment in the next 8 days.\n"
+"If there is a problem with paying invoice that we are not aware of, do not hesitate to contact our accounting\n"
+"department. so that we can resolve the matter quickly.\n"
+"Details of due payments is printed below.\n"
+" </p>\n"
+"<br/>\n"
+"Best Regards,\n"
+"    \n"
+"<br/>\n"
+"<br/>\n"
+"${user.name}\n"
+"    \n"
+"<br/>\n"
+"<br/>\n"
+"\n"
+"${object.get_followup_table_html() | safe}\n"
+"\n"
+"    <br/>\n"
+"\n"
+"</div>\n"
+"            "
+msgstr ""
+"\n"
+"<div style=\"font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34); background-color: rgb(255, 255, 255); \">\n"
+"    \n"
+"    <p>Dear ${object.name},</p>\n"
+"   <p>\n"
+"    We are disappointed to see that despite sending a reminder, that your account is now seriously overdue.\n"
+"It is essential that immediate payment is made, otherwise we will have to consider placing a stop on your account\n"
+"which means that we will no longer be able to supply your company with (goods/services).\n"
+"Please, take appropriate measures in order to carry out this payment in the next 8 days.\n"
+"If there is a problem with paying invoice that we are not aware of, do not hesitate to contact our accounting\n"
+"department. so that we can resolve the matter quickly.\n"
+"Details of due payments is printed below.\n"
+" </p>\n"
+"<br/>\n"
+"Best Regards,\n"
+"    \n"
+"<br/>\n"
+"<br/>\n"
+"${user.name}\n"
+"    \n"
+"<br/>\n"
+"<br/>\n"
+"\n"
+"${object.get_followup_table_html() | safe}\n"
+"\n"
+"    <br/>\n"
+"\n"
+"</div>\n"
+"            "
+
+#. module: devit_account_followup
+#: model:mail.template,body_html:devit_account_followup.email_template_devit_account_followup_level0
+msgid ""
+"\n"
+"<div style=\"font-size:13px;font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34); background-color: rgb(255, 255, 255); \">\n"
+"\n"
+"    <p style=\"margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">Dear ${object.name},</p>\n"
+"    <p style=\"margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
+"    Exception made if there was a mistake of ours, it seems that the following amount stays unpaid. Please, take\n"
+"appropriate measures in order to carry out this payment in the next 8 days.\n"
+"\n"
+"Would your payment have been carried out after this mail was sent, please ignore this message. Do not hesitate to\n"
+"contact our accounting department.  \n"
+"\n"
+"    </p>\n"
+"<br>\n"
+"Best Regards,\n"
+"<br>\n"
+"   <br>\n"
+"${user.name}\n"
+"\n"
+"<br>\n"
+"<br>\n"
+"\n"
+"\n"
+"${object.get_followup_table_html() | safe}\n"
+"\n"
+"    <br>\n"
+"\n"
+"</div>\n"
+"            "
+msgstr ""
+"\n"
+"<div style=\"font-size:13px;font-family: 'Lucica Grande', Ubuntu, Arial, Verdana, sans-serif; font-size: 12px; color: rgb(34, 34, 34); background-color: rgb(255, 255, 255); \">\n"
+"\n"
+"    <p style=\"margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">Dear ${object.name},</p>\n"
+"    <p style=\"margin:0px 0px 9px 0px;font-size:13px;font-family:&quot;Lucida Grande&quot;, Helvetica, Verdana, Arial, sans-serif;\">\n"
+"    Exception made if there was a mistake of ours, it seems that the following amount stays unpaid. Please, take\n"
+"appropriate measures in order to carry out this payment in the next 8 days.\n"
+"\n"
+"Would your payment have been carried out after this mail was sent, please ignore this message. Do not hesitate to\n"
+"contact our accounting department.  \n"
+"\n"
+"    </p>\n"
+"<br>\n"
+"Best Regards,\n"
+"<br>\n"
+"   <br>\n"
+"${user.name}\n"
+"\n"
+"<br>\n"
+"<br>\n"
+"\n"
+"\n"
+"${object.get_followup_table_html() | safe}\n"
+"\n"
+"    <br>\n"
+"\n"
+"</div>\n"
+"            "
+
+#. module: devit_account_followup
+#: code:addons/devit_account_followup/wizard/account_followup_print.py:190
+#, python-format
+msgid " email(s) sent"
+msgstr " email(s) sent"
+
+#. module: devit_account_followup
+#: code:addons/devit_account_followup/wizard/account_followup_print.py:192
+#, python-format
+msgid " email(s) should have been sent, but "
+msgstr " email(s) should have been sent, but "
+
+#. module: devit_account_followup
+#: code:addons/devit_account_followup/wizard/account_followup_print.py:194
+#, python-format
+msgid " had unknown email address(es)"
+msgstr " had unknown email address(es)"
+
+#. module: devit_account_followup
+#: code:addons/devit_account_followup/wizard/account_followup_print.py:196
+#, python-format
+msgid " letter(s) in report"
+msgstr " letter(s) in report"
+
+#. module: devit_account_followup
+#: code:addons/devit_account_followup/wizard/account_followup_print.py:197
+#, python-format
+msgid " manual action(s) assigned:"
+msgstr " manual action(s) assigned:"
+
+#. module: devit_account_followup
+#: code:addons/devit_account_followup/wizard/account_followup_print.py:187
+#, python-format
+msgid " will be sent"
+msgstr " will be sent"
+
+#. module: devit_account_followup
+#: model:mail.template,subject:devit_account_followup.email_template_devit_account_followup_default
+#: model:mail.template,subject:devit_account_followup.email_template_devit_account_followup_level0
+#: model:mail.template,subject:devit_account_followup.email_template_devit_account_followup_level1
+#: model:mail.template,subject:devit_account_followup.email_template_devit_account_followup_level2
+msgid ""
+"${user.company_id.name} Payment Reminder\n"
+"            "
+msgstr ""
+"${user.company_id.name} Payment Reminder\n"
+"            "
+
+#. module: devit_account_followup
+#: code:addons/devit_account_followup/wizard/account_followup_print.py:261
+#, python-format
+msgid "%s partners have no credits and as such the action is cleared"
+msgstr "%s partners have no credits and as such the action is cleared"
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.view_partner_inherit_followup_form
+msgid ", the latest payment follow-up was:"
+msgstr ", El último seguimiento de pago fue el:"
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.view_devit_account_followup_followup_line_form
+msgid ": Current Date"
+msgstr ": Current Date"
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.view_devit_account_followup_followup_line_form
+msgid ": Partner Name"
+msgstr ": Partner Name"
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.view_devit_account_followup_followup_line_form
+msgid ": User Name"
+msgstr ": User Name"
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.view_devit_account_followup_followup_line_form
+msgid ": User's Company Name"
+msgstr ": User's Company Name"
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.report_followup
+msgid ""
+"<br/>\n"
+"                                Customer ref:"
+msgstr ""
+"<br/>\n"
+"                                Customer ref:"
+
+#. module: devit_account_followup
+#: model:ir.model,name:devit_account_followup.model_devit_account_followup_followup
+msgid "Account Follow-up"
+msgstr "Account Follow-up"
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.view_partner_inherit_followup_form
+msgid "Account Move line"
+msgstr "Account Move line"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_followup_line_manual_action_note
+msgid "Action To Do"
+msgstr "Acción a realizar"
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.view_partner_inherit_followup_form
+msgid "Action to be taken e.g. Give a phonecall, Check if it's paid, ..."
+msgstr "Action to be taken e.g. Give a phonecall, Check if it's paid, ..."
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.view_devit_account_followup_followup_line_form
+msgid "After"
+msgstr "After"
+
+#. module: devit_account_followup
+#: code:addons/devit_account_followup/models/account_followup.py:308
+#: model:ir.ui.view,arch_db:devit_account_followup.report_followup
+#, python-format
+msgid "Amount"
+msgstr "Importe"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,field_description:devit_account_followup.field_res_partner_payment_amount_due
+#: model:ir.model.fields,field_description:devit_account_followup.field_res_users_payment_amount_due
+msgid "Amount Due"
+msgstr "Saldo"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,field_description:devit_account_followup.field_res_partner_payment_amount_overdue
+#: model:ir.model.fields,field_description:devit_account_followup.field_res_users_payment_amount_overdue
+msgid "Amount Overdue"
+msgstr "Monto adeudado"
+
+#. module: devit_account_followup
+#: code:addons/devit_account_followup/models/account_followup.py:337
+#, python-format
+msgid "Amount due"
+msgstr "Monto a vencer"
+
+#. module: devit_account_followup
+#: code:addons/devit_account_followup/wizard/account_followup_print.py:171
+#, python-format
+msgid "Anybody"
+msgstr "Anybody"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_followup_line_manual_action_responsible_id
+msgid "Assign a Responsible"
+msgstr "Assign a Responsible"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,field_description:devit_account_followup.field_account_move_line_result
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_stat_balance
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_stat_by_partner_balance
+msgid "Balance"
+msgstr "Balance"
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.devit_account_followup_stat_by_partner_search
+msgid "Balance > 0"
+msgstr "Balance > 0"
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.view_partner_inherit_followup_form
+msgid ""
+"Below is the history of the transactions of this\n"
+"                            customer. You can check \"No Follow-up\" in\n"
+"                            order to exclude it from the next follow-up\n"
+"                            actions."
+msgstr ""
+"A continuación se muestra el historial de las transacciones de este\n"
+"                            cliente. Puede marcar \"Sin seguimiento\" \n"
+"                            para excluirlo de las próximas acciones de seguimiento."
+
+#. module: devit_account_followup
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_stat_blocked
+msgid "Blocked"
+msgstr "Blocked"
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.view_devit_account_followup_print
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,help:devit_account_followup.field_devit_account_followup_print_test_print
+msgid "Check if you want to print follow-ups without changing follow-up level."
+msgstr "Check if you want to print follow-ups without changing follow-up level."
+
+#. module: devit_account_followup
+#: model:ir.actions.act_window,help:devit_account_followup.action_devit_account_followup_definition_form
+msgid "Click to define follow-up levels and their related actions."
+msgstr "Click to define follow-up levels and their related actions."
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.view_partner_inherit_followup_form
+msgid "Click to mark the action as done."
+msgstr "Click to mark the action as done."
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.view_devit_account_followup_sending_results
+msgid "Close"
+msgstr "Cerrar"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_followup_company_id
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_print_company_id
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_stat_by_partner_company_id
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_stat_company_id
+#: model:ir.ui.view,arch_db:devit_account_followup.view_devit_account_followup_stat_search
+msgid "Company"
+msgstr "Compañía"
+
+#. module: devit_account_followup
+#: model:ir.model,name:devit_account_followup.model_res_partner
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_followup_create_uid
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_followup_line_create_uid
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_print_create_uid
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_sending_results_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_followup_create_date
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_followup_line_create_date
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_print_create_date
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_sending_results_create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_stat_credit
+msgid "Credit"
+msgstr "Haber"
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.customer_followup_tree
+msgid "Customer Followup"
+msgstr "Customer Followup"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,field_description:devit_account_followup.field_res_partner_payment_note
+#: model:ir.model.fields,field_description:devit_account_followup.field_res_users_payment_note
+msgid "Customer Payment Promise"
+msgstr "Customer Payment Promise"
+
+#. module: devit_account_followup
+#: sql_constraint:devit_account_followup.followup.line:0
+msgid "Days of the follow-up levels must be different"
+msgstr "Days of the follow-up levels must be different"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_stat_debit
+msgid "Debit"
+msgstr "Debe"
+
+#. module: devit_account_followup
+#: code:addons/devit_account_followup/models/account_followup.py:305
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_sending_results_description
+#: model:ir.ui.view,arch_db:devit_account_followup.report_followup
+#, python-format
+msgid "Description"
+msgstr "Descripción"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_followup_display_name
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_followup_line_display_name
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_print_display_name
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_sending_results_display_name
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_stat_by_partner_display_name
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_stat_display_name
+#: model:ir.model.fields,field_description:devit_account_followup.field_report_devit_account_followup_report_followup_display_name
+msgid "Display Name"
+msgstr "Mostrar Nombre"
+
+#. module: devit_account_followup
+#: model:ir.ui.menu,name:devit_account_followup.devit_account_followup_s
+msgid "Do Manual Follow-Ups"
+msgstr "Seguimientos manuales"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,help:devit_account_followup.field_devit_account_followup_print_partner_lang
+msgid "Do not change message text, if you want to send email in partner language, or configure from company"
+msgstr "Do not change message text, if you want to send email in partner language, or configure from company"
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.report_followup
+msgid ""
+"Document: Customer account statement\n"
+"                                <br/>\n"
+"                                Date:"
+msgstr ""
+"Document: Customer account statement\n"
+"                                <br/>\n"
+"                                Date:"
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.view_devit_account_followup_sending_results
+msgid "Download Letters"
+msgstr "Download Letters"
+
+#. module: devit_account_followup
+#: code:addons/devit_account_followup/models/account_followup.py:307
+#, python-format
+msgid "Due Date"
+msgstr "Due Date"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_followup_line_delay
+msgid "Due Days"
+msgstr " Días de vencimiento"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_print_email_body
+msgid "Email Body"
+msgstr "Email Body"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_print_email_subject
+msgid "Email Subject"
+msgstr "Email Subject"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_followup_line_email_template_id
+msgid "Email Template"
+msgstr "Plantilla de correo electrónico"
+
+#. module: devit_account_followup
+#: code:addons/devit_account_followup/models/account_followup.py:260
+#, python-format
+msgid "Email not sent because of email address of partner not filled in"
+msgstr "No se envió el correo electrónico porque la dirección de correo electrónico del socio no se completó"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_stat_by_partner_date_move
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_stat_date_move
+msgid "First move"
+msgstr "First move"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_followup_line_followup_id
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_stat_followup_id
+msgid "Follow Ups"
+msgstr "Follow Ups"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_print_followup_id
+msgid "Follow-Up"
+msgstr "Follow-Up"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_followup_line_name
+msgid "Follow-Up Action"
+msgstr "Acción de seguimiento"
+
+#. module: devit_account_followup
+#: model:ir.ui.menu,name:devit_account_followup.menu_action_followup_stat_follow
+msgid "Follow-Ups Analysis"
+msgstr "Análisis de Seguimientos de Pago"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_followup_followup_line
+#: model:ir.ui.menu,name:devit_account_followup.devit_account_followup_main_menu
+#: model:ir.ui.view,arch_db:devit_account_followup.customer_followup_search_view
+#: model:ir.ui.view,arch_db:devit_account_followup.view_devit_account_followup_followup_form
+#: model:ir.ui.view,arch_db:devit_account_followup.view_devit_account_followup_followup_tree
+msgid "Follow-up"
+msgstr "Seguimiento"
+
+#. module: devit_account_followup
+#: model:ir.model,name:devit_account_followup.model_devit_account_followup_followup_line
+msgid "Follow-up Criteria"
+msgstr "Follow-up Criteria"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,field_description:devit_account_followup.field_account_move_line_followup_line_id
+#: model:ir.ui.view,arch_db:devit_account_followup.view_devit_account_followup_stat_search
+msgid "Follow-up Level"
+msgstr "Follow-up Level"
+
+#. module: devit_account_followup
+#: model:ir.ui.menu,name:devit_account_followup.devit_account_followup_menu
+msgid "Follow-up Levels"
+msgstr "Niveles Seguimiento"
+
+#. module: devit_account_followup
+#: model:ir.actions.report,name:devit_account_followup.action_report_followup
+msgid "Follow-up Report"
+msgstr "Follow-up Report"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,field_description:devit_account_followup.field_res_partner_payment_responsible_id
+#: model:ir.model.fields,field_description:devit_account_followup.field_res_users_payment_responsible_id
+#: model:ir.ui.view,arch_db:devit_account_followup.customer_followup_search_view
+msgid "Follow-up Responsible"
+msgstr "Responsable de seguimiento de pago"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_print_date
+msgid "Follow-up Sending Date"
+msgstr " Envió de seguimientos"
+
+#. module: devit_account_followup
+#: model:ir.model,name:devit_account_followup.model_devit_account_followup_stat
+msgid "Follow-up Statistics"
+msgstr "Follow-up Statistics"
+
+#. module: devit_account_followup
+#: model:ir.model,name:devit_account_followup.model_devit_account_followup_stat_by_partner
+msgid "Follow-up Statistics by Partner"
+msgstr "Follow-up Statistics by Partner"
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.view_devit_account_followup_followup_line_form
+#: model:ir.ui.view,arch_db:devit_account_followup.view_devit_account_followup_followup_line_tree
+msgid "Follow-up Steps"
+msgstr "Follow-up Steps"
+
+#. module: devit_account_followup
+#: code:addons/devit_account_followup/wizard/account_followup_print.py:185
+#, python-format
+msgid "Follow-up letter of "
+msgstr "Follow-up letter of "
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.view_devit_account_followup_stat_graph
+msgid "Follow-up lines"
+msgstr "Follow-up lines"
+
+#. module: devit_account_followup
+#: model:ir.actions.act_window,name:devit_account_followup.action_followup_stat
+#: model:ir.ui.view,arch_db:devit_account_followup.view_devit_account_followup_stat_search
+msgid "Follow-ups Sent"
+msgstr "Follow-ups Sent"
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.customer_followup_search_view
+msgid "Follow-ups To Do"
+msgstr "Follow-ups To Do"
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.customer_followup_search_view
+msgid "Followup Level"
+msgstr "Followup Level"
+
+#. module: devit_account_followup
+#: model:ir.actions.act_window,help:devit_account_followup.action_devit_account_followup_definition_form
+msgid ""
+"For each step, specify the actions to be taken and delay in\n"
+"                    days. It is\n"
+"                    possible to use print and e-mail templates to send specific\n"
+"                    messages to\n"
+"                    the customer."
+msgstr ""
+"For each step, specify the actions to be taken and delay in\n"
+"                    days. It is\n"
+"                    possible to use print and e-mail templates to send specific\n"
+"                    messages to\n"
+"                    the customer."
+
+#. module: devit_account_followup
+#: model:ir.model.fields,help:devit_account_followup.field_devit_account_followup_followup_line_sequence
+msgid "Gives the sequence order when displaying a list of follow-up lines."
+msgstr "Gives the sequence order when displaying a list of follow-up lines."
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.view_devit_account_followup_stat_search
+msgid "Group By"
+msgstr "Agrupar por"
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.view_partner_inherit_followup_form
+msgid "He said the problem was temporary and promised to pay 50% before 15th of May, balance before 1st of July."
+msgstr "He said the problem was temporary and promised to pay 50% before 15th of May, balance before 1st of July."
+
+#. module: devit_account_followup
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_followup_id
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_followup_line_id
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_print_id
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_sending_results_id
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_stat_by_partner_id
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_stat_id
+#: model:ir.model.fields,field_description:devit_account_followup.field_report_devit_account_followup_report_followup_id
+msgid "ID"
+msgstr "ID"
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.view_partner_inherit_followup_form
+msgid "If not specified by the latest follow-up level, it will send from the default email template"
+msgstr "If not specified by the latest follow-up level, it will send from the default email template"
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.view_devit_account_followup_stat_search
+msgid "Including journal entries marked as a litigation"
+msgstr "Including journal entries marked as a litigation"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_stat_by_partner_invoice_partner_id
+msgid "Invoice Address"
+msgstr "Dirección de Factura"
+
+#. module: devit_account_followup
+#: code:addons/devit_account_followup/models/account_followup.py:304
+#: model:ir.ui.view,arch_db:devit_account_followup.report_followup
+#, python-format
+msgid "Invoice Date"
+msgstr "Fecha de la factura"
+
+#. module: devit_account_followup
+#: code:addons/devit_account_followup/wizard/account_followup_print.py:146
+#, python-format
+msgid "Invoices Reminder"
+msgstr "Invoices Reminder"
+
+#. module: devit_account_followup
+#: model:ir.model,name:devit_account_followup.model_account_move_line
+msgid "Journal Item"
+msgstr "Entrada de Diario"
+
+#. module: devit_account_followup
+#: model:ir.actions.act_window,name:devit_account_followup.account_manual_reconcile_action
+#: model:ir.ui.view,arch_db:devit_account_followup.view_move_line_reconcile_tree
+msgid "Journal Items to Reconcile"
+msgstr "Items a conciliar"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_followup___last_update
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_followup_line___last_update
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_print___last_update
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_sending_results___last_update
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_stat___last_update
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_stat_by_partner___last_update
+#: model:ir.model.fields,field_description:devit_account_followup.field_report_devit_account_followup_report_followup___last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_followup_line_write_uid
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_followup_write_uid
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_print_write_uid
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_sending_results_write_uid
+msgid "Last Updated by"
+msgstr "Última actualización realizada por"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_followup_line_write_date
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_followup_write_date
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_print_write_date
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_sending_results_write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_stat_by_partner_date_move_last
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_stat_date_move_last
+msgid "Last move"
+msgstr "Last move"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,field_description:devit_account_followup.field_account_move_line_followup_date
+msgid "Latest Follow-up"
+msgstr "Latest Follow-up"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,field_description:devit_account_followup.field_res_partner_latest_followup_date
+#: model:ir.model.fields,field_description:devit_account_followup.field_res_users_latest_followup_date
+msgid "Latest Follow-up Date"
+msgstr "Latest Follow-up Date"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,field_description:devit_account_followup.field_res_partner_latest_followup_level_id
+#: model:ir.model.fields,field_description:devit_account_followup.field_res_users_latest_followup_level_id
+msgid "Latest Follow-up Level"
+msgstr "Ultimo nivel de seguimiento"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,field_description:devit_account_followup.field_res_partner_latest_followup_level_id_without_lit
+#: model:ir.model.fields,field_description:devit_account_followup.field_res_users_latest_followup_level_id_without_lit
+msgid "Latest Follow-up Level without litigation"
+msgstr "Latest Follow-up Level without litigation"
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.view_devit_account_followup_stat_search
+msgid "Latest Follow-up Month"
+msgstr "Latest Follow-up Month"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,help:devit_account_followup.field_res_partner_latest_followup_date
+#: model:ir.model.fields,help:devit_account_followup.field_res_users_latest_followup_date
+msgid "Latest date that the follow-up level of the partner was changed"
+msgstr "Latest date that the follow-up level of the partner was changed"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_stat_by_partner_date_followup
+msgid "Latest follow-up"
+msgstr "Latest follow-up"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_stat_date_followup
+msgid "Latest followup"
+msgstr "Latest followup"
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.report_followup
+msgid "Li."
+msgstr "Li."
+
+#. module: devit_account_followup
+#: code:addons/devit_account_followup/models/account_followup.py:310
+#, python-format
+msgid "Lit."
+msgstr "Lit."
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.view_devit_account_followup_stat_search
+msgid "Litigation"
+msgstr "Litigio"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_followup_line_manual_action
+#: model:ir.ui.view,arch_db:devit_account_followup.view_devit_account_followup_followup_line_form
+msgid "Manual Action"
+msgstr "Acción Manual"
+
+#. module: devit_account_followup
+#: model:ir.actions.act_window,name:devit_account_followup.action_customer_followup
+msgid "Manual Follow-Ups"
+msgstr "Seguimientos manuales"
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.report_followup
+msgid ""
+"Maturity\n"
+"                                                Date"
+msgstr ""
+"Maturity\n"
+"                                                Date"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_stat_by_partner_max_followup_id
+msgid "Max Follow Up Level"
+msgstr "Max Follow Up Level"
+
+#. module: devit_account_followup
+#: model:ir.actions.act_window,name:devit_account_followup.action_customer_my_followup
+#: model:ir.ui.menu,name:devit_account_followup.menu_sale_followup
+msgid "My Follow-Ups"
+msgstr "Mis seguimientos de pago"
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.customer_followup_search_view
+msgid "My Follow-ups"
+msgstr "My Follow-ups"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_followup_name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_sending_results_needprinting
+msgid "Needs Printing"
+msgstr "Needs Printing"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,field_description:devit_account_followup.field_res_partner_payment_next_action
+#: model:ir.model.fields,field_description:devit_account_followup.field_res_users_payment_next_action
+msgid "Next Action"
+msgstr "Próxima Acción"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,field_description:devit_account_followup.field_res_partner_payment_next_action_date
+#: model:ir.model.fields,field_description:devit_account_followup.field_res_users_payment_next_action_date
+msgid "Next Action Date"
+msgstr "Próxima Fecha de Acción"
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.customer_followup_search_view
+msgid "No Responsible"
+msgstr "No Responsible"
+
+#. module: devit_account_followup
+#: model:ir.actions.act_window,help:devit_account_followup.account_manual_reconcile_action
+msgid "No journal items found."
+msgstr "No journal items found."
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.view_devit_account_followup_stat_search
+msgid "Not Litigation"
+msgstr "Not Litigation"
+
+#. module: devit_account_followup
+#: sql_constraint:devit_account_followup.followup:0
+msgid "Only one follow-up per company is allowed"
+msgstr "Only one follow-up per company is allowed"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,help:devit_account_followup.field_res_partner_payment_responsible_id
+#: model:ir.model.fields,help:devit_account_followup.field_res_users_payment_responsible_id
+msgid "Optionally you can assign a user to this field, which will make him responsible for the action."
+msgstr "Optionally you can assign a user to this field, which will make him responsible for the action."
+
+#. module: devit_account_followup
+#: code:addons/devit_account_followup/models/account_followup.py:256
+#, python-format
+msgid "Overdue email sent to %s, "
+msgstr "Overdue email sent to %s, "
+
+#. module: devit_account_followup
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_stat_by_partner_partner_id
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_stat_partner_id
+#: model:ir.ui.view,arch_db:devit_account_followup.view_devit_account_followup_stat_search
+msgid "Partner"
+msgstr "Contacto"
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.account_move_line_partner_tree
+msgid "Partner entries"
+msgstr "Partner entries"
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.devit_account_followup_stat_by_partner_search
+#: model:ir.ui.view,arch_db:devit_account_followup.devit_account_followup_stat_by_partner_tree
+msgid "Partner to Remind"
+msgstr "Partner to Remind"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_print_partner_ids
+msgid "Partners"
+msgstr "Empresas"
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.customer_followup_search_view
+msgid "Partners with Overdue Credits"
+msgstr "Partners with Overdue Credits"
+
+#. module: devit_account_followup
+#: model:ir.ui.menu,name:devit_account_followup.menu_finance_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.view_partner_inherit_followup_form
+msgid "Payment Follow-up"
+msgstr "Seguimiento de pago"
+
+#. module: devit_account_followup
+#: model:ir.actions.act_window,name:devit_account_followup.action_devit_account_followup_definition_form
+msgid "Payment Follow-ups"
+msgstr "Seguimiento de pagos"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,help:devit_account_followup.field_res_partner_payment_note
+#: model:ir.model.fields,help:devit_account_followup.field_res_users_payment_note
+msgid "Payment Note"
+msgstr "Payment Note"
+
+#. module: devit_account_followup
+#: model:ir.model,name:devit_account_followup.model_devit_account_followup_print
+msgid "Print Follow-up & Send Mail to Customers"
+msgstr "Print Follow-up & Send Mail to Customers"
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.view_partner_inherit_followup_form
+msgid "Print Overdue Payments"
+msgstr "Imprimir pagos vencidos"
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.view_partner_inherit_followup_form
+msgid "Print overdue payments report independent of follow-up line"
+msgstr "Print overdue payments report independent of follow-up line"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_followup_line_description
+msgid "Printed Message"
+msgstr "Printed Message"
+
+#. module: devit_account_followup
+#: code:addons/devit_account_followup/models/account_followup.py:382
+#, python-format
+msgid "Printed overdue payments report"
+msgstr "Printed overdue payments report"
+
+#. module: devit_account_followup
+#: model:ir.ui.menu,name:devit_account_followup.menu_manual_reconcile_followup
+msgid "Reconcile Invoices & Payments"
+msgstr "Facturas y pagos a conciliar"
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.report_followup
+msgid "Ref"
+msgstr "Ref"
+
+#. module: devit_account_followup
+#: code:addons/devit_account_followup/models/account_followup.py:306
+#, python-format
+msgid "Reference"
+msgstr "Reference"
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.view_partner_inherit_followup_form
+msgid "Responsible of credit collection"
+msgstr "Responsible of credit collection"
+
+#. module: devit_account_followup
+#: model:ir.model,name:devit_account_followup.model_devit_account_followup_sending_results
+msgid "Results from the sending of the different letters and emails"
+msgstr "Results from the sending of the different letters and emails"
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.view_devit_account_followup_filter
+msgid "Search Follow-up"
+msgstr "Search Follow-up"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_print_email_conf
+msgid "Send Email Confirmation"
+msgstr "Send Email Confirmation"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_print_partner_lang
+msgid "Send Email in Partner Language"
+msgstr "Send Email in Partner Language"
+
+#. module: devit_account_followup
+#: model:ir.actions.act_window,name:devit_account_followup.action_devit_account_followup_print
+msgid "Send Follow-Ups"
+msgstr "Enviar seguimientos de pago"
+
+#. module: devit_account_followup
+#: model:ir.ui.menu,name:devit_account_followup.devit_account_followup_print_menu
+msgid "Send Letters and Emails"
+msgstr "Enviar emails y cartas"
+
+#. module: devit_account_followup
+#: code:addons/devit_account_followup/wizard/account_followup_print.py:271
+#, python-format
+msgid "Send Letters and Emails: Actions Summary"
+msgstr "Send Letters and Emails: Actions Summary"
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.view_partner_inherit_followup_form
+msgid "Send Overdue Email"
+msgstr "Enviar Emails vencidos"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_followup_line_send_letter
+msgid "Send a Letter"
+msgstr "Enviar a carta"
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.view_devit_account_followup_followup_line_form
+msgid "Send a Letter or Email"
+msgstr "Send a Letter or Email"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_followup_line_send_email
+#: model:ir.ui.view,arch_db:devit_account_followup.view_devit_account_followup_followup_line_form
+msgid "Send an Email"
+msgstr "Enviar un email"
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.view_devit_account_followup_print
+msgid "Send emails and generate letters"
+msgstr "Enviar emails y generar cartas"
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.view_devit_account_followup_print
+msgid "Send follow-ups"
+msgstr "Enviar seguimientos de pago"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_followup_line_sequence
+msgid "Sequence"
+msgstr "Secuencia"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_print_summary
+msgid "Summary"
+msgstr "Resumen"
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.view_devit_account_followup_sending_results
+msgid "Summary of actions"
+msgstr "Summary of actions"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,field_description:devit_account_followup.field_devit_account_followup_print_test_print
+msgid "Test Print"
+msgstr "Test Print"
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.view_partner_inherit_followup_form
+msgid "The"
+msgstr "El"
+
+#. module: devit_account_followup
+#: code:addons/devit_account_followup/report/account_followup_print.py:101
+#, python-format
+msgid "The followup plan defined for the current company does not have any followup action."
+msgstr "The followup plan defined for the current company does not have any followup action."
+
+#. module: devit_account_followup
+#: model:ir.model.fields,help:devit_account_followup.field_res_partner_latest_followup_level_id
+#: model:ir.model.fields,help:devit_account_followup.field_res_users_latest_followup_level_id
+msgid "The maximum follow-up level"
+msgstr "The maximum follow-up level"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,help:devit_account_followup.field_res_partner_latest_followup_level_id_without_lit
+#: model:ir.model.fields,help:devit_account_followup.field_res_users_latest_followup_level_id_without_lit
+msgid "The maximum follow-up level without taking into account the account move lines with litigation"
+msgstr "The maximum follow-up level without taking into account the account move lines with litigation"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,help:devit_account_followup.field_devit_account_followup_followup_line_delay
+msgid "The number of days after the due date of the invoice to wait before sending the reminder.  Could be negative if you want to send a polite alert beforehand."
+msgstr "The number of days after the due date of the invoice to wait before sending the reminder.  Could be negative if you want to send a polite alert beforehand."
+
+#. module: devit_account_followup
+#: code:addons/devit_account_followup/models/account_followup.py:380
+#, python-format
+msgid "The partner does not have any accounting entries to print in the overdue report for the current company."
+msgstr "The partner does not have any accounting entries to print in the overdue report for the current company."
+
+#. module: devit_account_followup
+#: code:addons/devit_account_followup/models/account_followup.py:390
+#, python-format
+msgid "There is no followup plan defined for the current company."
+msgstr "There is no followup plan defined for the current company."
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.view_devit_account_followup_print
+msgid "This action will send follow-up emails, print the letters and set the manual actions per customer, according to the follow-up levels defined."
+msgstr "Esta acción enviará correos electrónicos de seguimiento, imprimirá el cartas y establecer las acciones manuales por cliente, de acuerdo con el niveles de seguimiento definidos."
+
+#. module: devit_account_followup
+#: model:ir.model.fields,help:devit_account_followup.field_devit_account_followup_print_date
+msgid "This field allow you to select a forecast date to plan your follow-ups"
+msgstr "This field allow you to select a forecast date to plan your follow-ups"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,help:devit_account_followup.field_res_partner_payment_next_action
+#: model:ir.model.fields,help:devit_account_followup.field_res_users_payment_next_action
+msgid "This is the next action to be taken.  It will automatically be set when the partner gets a follow-up level that requires a manual action. "
+msgstr "This is the next action to be taken.  It will automatically be set when the partner gets a follow-up level that requires a manual action. "
+
+#. module: devit_account_followup
+#: model:ir.model.fields,help:devit_account_followup.field_res_partner_payment_next_action_date
+#: model:ir.model.fields,help:devit_account_followup.field_res_users_payment_next_action_date
+msgid "This is when the manual follow-up is needed. The date will be set to the current date when the partner gets a follow-up level that requires a manual action. Can be practical to set manually e.g. to see if he keeps his promises."
+msgstr "This is when the manual follow-up is needed. The date will be set to the current date when the partner gets a follow-up level that requires a manual action. Can be practical to set manually e.g. to see if he keeps his promises."
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.view_devit_account_followup_followup_form
+msgid ""
+"To remind customers of paying their invoices, you can\n"
+"                        define different actions depending on how severely\n"
+"                        overdue the customer is. These actions are bundled\n"
+"                        into follow-up levels that are triggered when the due\n"
+"                        date of an invoice has passed a certain\n"
+"                        number of days. If there are other overdue invoices for\n"
+"                        the\n"
+"                        same customer, the actions of the most\n"
+"                        overdue invoice will be executed."
+msgstr ""
+"To remind customers of paying their invoices, you can\n"
+"                        define different actions depending on how severely\n"
+"                        overdue the customer is. These actions are bundled\n"
+"                        into follow-up levels that are triggered when the due\n"
+"                        date of an invoice has passed a certain\n"
+"                        number of days. If there are other overdue invoices for\n"
+"                        the\n"
+"                        same customer, the actions of the most\n"
+"                        overdue invoice will be executed."
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.account_move_line_partner_tree
+#: model:ir.ui.view,arch_db:devit_account_followup.view_move_line_reconcile_tree
+msgid "Total credit"
+msgstr "Total credit"
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.account_move_line_partner_tree
+#: model:ir.ui.view,arch_db:devit_account_followup.view_move_line_reconcile_tree
+msgid "Total debit"
+msgstr "Total debit"
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.report_followup
+msgid "Total:"
+msgstr "Total:"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,field_description:devit_account_followup.field_res_partner_unreconciled_aml_ids
+#: model:ir.model.fields,field_description:devit_account_followup.field_res_users_unreconciled_aml_ids
+msgid "Unreconciled Aml"
+msgstr "Unreconciled Aml"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,help:devit_account_followup.field_devit_account_followup_followup_line_send_letter
+msgid "When processing, it will print a letter"
+msgstr "When processing, it will print a letter"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,help:devit_account_followup.field_devit_account_followup_followup_line_send_email
+msgid "When processing, it will send an email"
+msgstr "When processing, it will send an email"
+
+#. module: devit_account_followup
+#: model:ir.model.fields,help:devit_account_followup.field_devit_account_followup_followup_line_manual_action
+msgid "When processing, it will set the manual action to be taken for that customer. "
+msgstr "When processing, it will set the manual action to be taken for that customer. "
+
+#. module: devit_account_followup
+#: model:ir.model.fields,field_description:devit_account_followup.field_res_partner_payment_earliest_due_date
+#: model:ir.model.fields,field_description:devit_account_followup.field_res_users_payment_earliest_due_date
+msgid "Worst Due Date"
+msgstr "Fecha de Vencimiento"
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.view_devit_account_followup_followup_line_form
+msgid ""
+"Write here the introduction in the letter,\n"
+"                            according to the level of the follow-up. You can\n"
+"                            use the following keywords in the text. Don't\n"
+"                            forget to translate in all languages you installed\n"
+"                            using to top right icon."
+msgstr ""
+"Write here the introduction in the letter,\n"
+"                            according to the level of the follow-up. You can\n"
+"                            use the following keywords in the text. Don't\n"
+"                            forget to translate in all languages you installed\n"
+"                            using to top right icon."
+
+#. module: devit_account_followup
+#: code:addons/devit_account_followup/models/account_followup.py:351
+#, python-format
+msgid "You became responsible to do the next action for the payment follow-up of"
+msgstr "You became responsible to do the next action for the payment follow-up of"
+
+#. module: devit_account_followup
+#: code:addons/devit_account_followup/models/account_followup.py:119
+#, python-format
+msgid "Your description is invalid, use the right legend or %% if you want to use the percent character."
+msgstr "Your description is invalid, use the right legend or %% if you want to use the percent character."
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.view_devit_account_followup_followup_line_form
+msgid "days overdue, do the following actions:"
+msgstr "days overdue, do the following actions:"
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.view_devit_account_followup_followup_line_form
+msgid "e.g. Call the customer, check if it's paid, ..."
+msgstr "e.g. Call the customer, check if it's paid, ..."
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.view_devit_account_followup_print
+msgid "or"
+msgstr "o"
+
+#. module: devit_account_followup
+#: model:ir.model,name:devit_account_followup.model_report_devit_account_followup_report_followup
+msgid "report.devit_account_followup.report_followup"
+msgstr "report.devit_account_followup.report_followup"
+
+#. module: devit_account_followup
+#: model:ir.model,name:devit_account_followup.model_res_config_settings
+msgid "res.config.settings"
+msgstr "res.config.settings"
+
+#. module: devit_account_followup
+#: model:ir.ui.view,arch_db:devit_account_followup.view_partner_inherit_followup_form
+msgid "⇾ Mark as Done"
+msgstr "⇾ Marcar como hecho"
