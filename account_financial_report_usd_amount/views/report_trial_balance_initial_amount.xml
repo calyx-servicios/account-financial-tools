@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_rtb_initial_balance_tree" model="ir.ui.view">
+        <field name="name">Initial Balance RTB Tree</field>
+        <field name="model">report.trial.balance.initial.amount</field>
+        <field name="arch" type="xml">
+            <tree string="Initial Balance RTB">
+                <field name="account_id" invisible="True" />
+                <field name="account_name" />
+                <field name="account_type" invisible="True"/>
+                <field name="amount" />
+                <field name="date" />
+                <field name="state" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_rtb_initial_balance_form" model="ir.ui.view">
+        <field name="name">Initial Balance RTB Form</field>
+        <field name="model">report.trial.balance.initial.amount</field>
+        <field name="arch" type="xml">
+            <form string="Initial Balance">
+                <header>
+                    <button name="cancel" string="Cancel" type="object" states="done" class="oe_highlight" groups="account.group_account_manager"/>
+                    <button name="validate" string="Done" type="object" states="draft" class="oe_highlight" groups="account.group_account_manager"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,done" readonly="1"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="account_id" options="{'no_create': True, 'no_create_edit':1}"/>
+                            <field name="date" />
+                            <field name="account_name" invisible="True"/>
+                            <field name="account_type" invisible="True"/>
+                        </group>
+                        <group>
+                            <field name="currency_id" options="{'no_open':True,'no_create': True, 'no_create_edit':1}" readonly="1"/>
+                            <field name="amount" widget="monetary" options="{'currency_field': 'currency_id'}"/>
+                        </group>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="activity_ids" widget="mail_activity"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_rtb_initial_balance_search" model="ir.ui.view">
+        <field name="name">Initial Balance RTB Search</field>
+        <field name="model">report.trial.balance.initial.amount</field>
+        <field name="arch" type="xml">
+            <search string="Initial Balance">
+                <field name="account_name" string="Account"/>
+                <field name="date" string="Date"/>
+                <filter name="draft" string="Draft" domain="[('state', '=', 'draft')]"/>
+                <filter name="done" string="Validate" domain="[('state', '=', 'done')]"/>
+                <separator/>
+                <group expand="0" string="Group By">
+                    <filter string="State" domain="[]" context="{'group_by':'state'}"/>
+                    <filter string="Date" domain="[]" context="{'group_by':'date'}"/>
+                    <filter string="Account Type" domain="[]" context="{'group_by':'account_type'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_rtb_initial_balance" model="ir.actions.act_window">
+        <field name="name">Initial Balance RTB</field>
+        <field name="res_model">report.trial.balance.initial.amount</field>
+        <field name="view_type">form</field>
+        <field name="view_mode">tree,form</field>
+        <field name="search_view_id" ref="view_rtb_initial_balance_search"/>
+        <field name="view_id" ref="view_rtb_initial_balance_tree"/>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create">Click to set a new initial balance amount to account.</p>
+        </field>
+    </record>
+
+    <menuitem id="account_rtb_intial_balance_menu" name="Initial Balance" action="action_rtb_initial_balance" parent="account.menu_finance_entries_actions" sequence="40" groups="account.group_account_manager"/>
+
+
+</odoo>

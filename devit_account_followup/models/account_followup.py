@@ -57,7 +57,7 @@ class FollowupLine(models.Model):
     _name = 'devit_account_followup.followup.line'
     _description = 'Follow-up Criteria'
 
-    name = fields.Char('Follow-Up Action', required=True)
+    name = fields.Char('Follow-Up Action', required=True, translate=True)
     sequence = fields.Integer('Sequence',
                               help="Gives the sequence order when displaying "
                                    "a list of follow-up lines.")

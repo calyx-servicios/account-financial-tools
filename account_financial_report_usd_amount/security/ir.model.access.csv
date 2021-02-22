@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_rtb_initial_balance_user,report.trial.balance.initial.amount.user,model_report_trial_balance_initial_amount,account.group_account_user,1,0,0,0
+access_rtb_initial_balance_manager,report.trial.balance.initial.amount.manager,model_report_trial_balance_initial_amount,account.group_account_manager,1,1,1,1

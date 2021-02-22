@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo noupdate="1">
+    <record model="account.account" id="account_diff_exchange_rate">
+        <field name="code">999999</field>
+        <field name="name">Diferencia de conversión</field>
+        <field name="user_type_id" eval="ref('account.data_account_type_other_income')"/>
+        <field name="analytic_tag_required">by_account_type</field>
+    </record>
+
+</odoo>

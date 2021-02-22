@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="trial_balance_wizard_usd_amount" model="ir.ui.view">
+            <field name="model">trial.balance.report.wizard</field>
+            <field name="name">trial.balance.report.wizard.form</field>
+            <field name="inherit_id" ref="account_financial_report.trial_balance_wizard" />
+            <field name="arch" type="xml">
+                <xpath expr="//group[@name='other_filters']" position="inside">
+                    <field name="usd_amount"/>
+                </xpath>
+                <field name="date_to" position="after">
+                    <field name="exchange_rate_amount" attrs="{'invisible': [('usd_amount', '=', False)], 'required': [('usd_amount', '=', True)]}"/>
+                </field>
+            </field>
+        </record>
+    </data>
+</odoo>
