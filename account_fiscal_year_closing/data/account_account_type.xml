@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- This is for avoid the default action of inject values in the unaffected earnings account
+        for report_general_ledger_account -->
+
+    <function name="write" model="ir.model.data">
+        <function name="search" model="ir.model.data">
+            <value eval="[('module', '=', 'account'), ('name', '=', 'data_account_type_other_income')]"/>
+        </function>
+        <value eval="{'noupdate': False}" />
+    </function>
+
+    <record id="account.data_account_type_other_income" model="account.account.type">
+        <field name="include_initial_balance">True</field>
+    </record>
+
+    <function name="write" model="ir.model.data">
+        <function name="search" model="ir.model.data">
+            <value eval="[('module', '=', 'account'), ('name', '=', 'data_account_type_other_income')]"/>
+        </function>
+        <value eval="{'noupdate': True}" />
+    </function>
+
+    <function name="write" model="ir.model.data">
+        <function name="search" model="ir.model.data">
+            <value eval="[('module', '=', 'account'), ('name', '=', 'data_account_type_revenue')]"/>
+        </function>
+        <value eval="{'noupdate': False}" />
+    </function>
+    <record id="account.data_account_type_revenue" model="account.account.type">
+        <field name="include_initial_balance">True</field>
+    </record>
+
+    <function name="write" model="ir.model.data">
+        <function name="search" model="ir.model.data">
+            <value eval="[('module', '=', 'account'), ('name', '=', 'data_account_type_revenue')]"/>
+        </function>
+        <value eval="{'noupdate': True}" />
+    </function>
+
+    <function name="write" model="ir.model.data">
+        <function name="search" model="ir.model.data">
+            <value eval="[('module', '=', 'account'), ('name', '=', 'data_account_type_depreciation')]"/>
+        </function>
+        <value eval="{'noupdate': False}" />
+    </function>
+
+    <record id="account.data_account_type_depreciation" model="account.account.type">
+        <field name="include_initial_balance">True</field>
+    </record>
+
+    <function name="write" model="ir.model.data">
+        <function name="search" model="ir.model.data">
+            <value eval="[('module', '=', 'account'), ('name', '=', 'data_account_type_depreciation')]"/>
+        </function>
+        <value eval="{'noupdate': True}" />
+    </function>
+
+    <function name="write" model="ir.model.data">
+        <function name="search" model="ir.model.data">
+            <value eval="[('module', '=', 'account'), ('name', '=', 'data_account_type_expenses')]"/>
+        </function>
+        <value eval="{'noupdate': False}" />
+    </function>
+
+    <record id="account.data_account_type_expenses" model="account.account.type">
+        <field name="include_initial_balance">True</field>
+    </record>
+
+    <function name="write" model="ir.model.data">
+        <function name="search" model="ir.model.data">
+            <value eval="[('module', '=', 'account'), ('name', '=', 'data_account_type_expenses')]"/>
+        </function>
+        <value eval="{'noupdate': True}" />
+    </function>
+
+    <function name="write" model="ir.model.data">
+        <function name="search" model="ir.model.data">
+            <value eval="[('module', '=', 'account'), ('name', '=', 'data_account_type_direct_costs')]"/>
+        </function>
+        <value eval="{'noupdate': False}" />
+    </function>
+
+    <record id="account.data_account_type_direct_costs" model="account.account.type">
+        <field name="include_initial_balance">True</field>
+    </record>
+
+    <function name="write" model="ir.model.data">
+        <function name="search" model="ir.model.data">
+            <value eval="[('module', '=', 'account'), ('name', '=', 'data_account_type_direct_costs')]"/>
+        </function>
+        <value eval="{'noupdate': True}" />
+    </function>
+
+</odoo>
