@@ -28,7 +28,7 @@ msgstr "Activo"
 #. module: account_asset_sap
 #: model:ir.model.fields,field_description:account_asset_sap.field_account_asset__book_value_sap
 msgid "Book Value SAP"
-msgstr "Book val. SSAP"
+msgstr "Book val. SAP"
 
 #. module: account_asset_sap
 #: model:ir.model.fields,field_description:account_asset_sap.field_account_asset__cost_center_sap
