@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record model="ir.ui.view" id="account_asset_view_form_sap">
+        <field name="name">account.asset.form</field>
+        <field name="model">account.asset</field>
+        <field name="inherit_id" ref="account_asset_management.account_asset_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook/page[3]" position="after">
+                <page name="sap_values" string="SAP">
+                    <separator string="SAP VALUES" colspan="4"/>
+                    <group colspan="4" col="4">
+                        <field name="depreciated_value_sap"/>
+                        <field name="residual_value_sap"/>
+                        <field name="accumulated_depreciation_sap"/>
+                        <field name="book_value_sap"/>
+                        <field name="monthl_sap"/>
+                        <field name="cost_center_sap"/>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="account_asset_view_tree_sap" model="ir.ui.view">
+        <field name="name">account.asset.tree.sap</field>
+        <field name="model">account.asset</field>
+        <field name="inherit_id" ref="account_asset_management.account_asset_view_tree"/>
+        <field name="arch" type="xml">
+            <field name="company_id" position="before">
+                <field name="depreciated_value_sap"/>
+                <field name="residual_value_sap"/>
+                <field name="accumulated_depreciation_sap"/>
+                <field name="book_value_sap"/>
+                <field name="monthl_sap"/>
+                <field name="cost_center_sap"/>
+            </field>
+        </field>
+    </record>
+
+</odoo>
