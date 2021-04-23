@@ -20,10 +20,10 @@
 ##############################################################################
 
 {
-    'name': 'Payment Follow-up Management',
-    'version': '1.0',
-    'category': 'Accounting & Finance',
-    'description': """
+    "name": "Payment Follow-up Management",
+    "version": "1.0",
+    "category": "Accounting & Finance",
+    "description": """
 Module to automate letters for unpaid invoices, with multi-level recalls.
 =========================================================================
 
@@ -45,24 +45,24 @@ Note that if you want to check the follow-up level for a given partner/account e
 This module is migrated from Odoo 8.0
 =====================================
 """,
-    'author': 'OpenERP SA, OdooDev',
-    'license': 'AGPL-3',
-    'website': 'https://www.odoo.com/page/billing',
-    'depends': ['account_invoicing', 'mail'],
-    'data': [
-        'security/account_followup_security.xml',
-        'security/ir.model.access.csv',
-        'report/account_followup_report.xml',
-        'data/account_followup_data.xml',
-        'views/account_followup_view.xml',
-        'views/account_followup_customers.xml',
-        'wizard/account_followup_print_view.xml',
-        'views/report_followup.xml',
-        'views/account_followup_reports.xml'
+    "author": "OpenERP SA, OdooDev",
+    "license": "AGPL-3",
+    "website": "https://www.odoo.com/page/billing",
+    "depends": ["account_invoicing", "mail"],
+    "data": [
+        "security/account_followup_security.xml",
+        "security/ir.model.access.csv",
+        "report/account_followup_report.xml",
+        "data/account_followup_data.xml",
+        "views/account_followup_view.xml",
+        "views/account_followup_customers.xml",
+        "wizard/account_followup_print_view.xml",
+        "views/report_followup.xml",
+        "views/account_followup_reports.xml",
+        "data/ir_cron.xml",
     ],
-    'demo': ['demo/account_followup_demo.xml'],
-    'images': [
-    ],
-    'installable': True,
-    'auto_install': False,
+    "demo": ["demo/account_followup_demo.xml"],
+    "images": [],
+    "installable": True,
+    "auto_install": False,
 }
