@@ -1,0 +1,84 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* account_report_pl
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-04-23 16:54+0000\n"
+"PO-Revision-Date: 2021-04-23 16:54+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: account_report_pl
+#: model:ir.model,name:account_report_pl.model_account_account
+msgid "Account"
+msgstr "Cuenta"
+
+#. module: account_report_pl
+#: model:ir.model.fields,field_description:account_report_pl.field_report_pl__active
+msgid "Active"
+msgstr "Activo"
+
+#. module: account_report_pl
+#: model_terms:ir.actions.act_window,help:account_report_pl.action_account_report_pl_view
+msgid "Click to set a new Report P&amp;L Concepts."
+msgstr "Click para crear un nuevo Concepto"
+
+#. module: account_report_pl
+#: model:ir.model.fields,field_description:account_report_pl.field_report_pl__concepts
+msgid "Concepts"
+msgstr "Concepto"
+
+#. module: account_report_pl
+#: model:ir.model.fields,field_description:account_report_pl.field_report_pl__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: account_report_pl
+#: model:ir.model.fields,field_description:account_report_pl.field_report_pl__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: account_report_pl
+#: model:ir.model.fields,field_description:account_report_pl.field_report_pl__display_name
+msgid "Display Name"
+msgstr "Nombre Mostrado"
+
+#. module: account_report_pl
+#: model:ir.model.fields,field_description:account_report_pl.field_report_pl__id
+msgid "ID"
+msgstr ""
+
+#. module: account_report_pl
+#: model:ir.model.fields,field_description:account_report_pl.field_report_pl____last_update
+msgid "Last Modified on"
+msgstr "Ultima vez modificado en"
+
+#. module: account_report_pl
+#: model:ir.model.fields,field_description:account_report_pl.field_report_pl__write_uid
+msgid "Last Updated by"
+msgstr "Ultima vez actualizado por"
+
+#. module: account_report_pl
+#: model:ir.model.fields,field_description:account_report_pl.field_report_pl__write_date
+msgid "Last Updated on"
+msgstr "Ultima vez actualizado en"
+
+#. module: account_report_pl
+#: model:ir.model.fields,field_description:account_report_pl.field_account_account__report_pl_id
+msgid "Report P&L"
+msgstr "Reporte P&L"
+
+#. module: account_report_pl
+#: model:ir.actions.act_window,name:account_report_pl.action_account_report_pl_view
+#: model:ir.ui.menu,name:account_report_pl.menu_account_report_pl
+#: model_terms:ir.ui.view,arch_db:account_report_pl.view_account_report_pl_search
+#: model_terms:ir.ui.view,arch_db:account_report_pl.view_account_report_pl_tree
+msgid "Report P&L Concepts"
+msgstr "Conceptos Reporte P&L"
