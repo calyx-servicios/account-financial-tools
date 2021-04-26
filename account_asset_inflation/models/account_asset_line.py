@@ -40,13 +40,11 @@ class AccountAssetLine(models.Model):
     depreciated_value_result = fields.Float(
         string="Depreciated Value With Inflation",
         digits=(2, 2),
-        compute="_compute_depreciated_adjustment",
         store=True
     )
 
     depreciated_adjustment = fields.Float(
         digits=(2, 2),
-        compute="_compute_depreciated_adjustment",
         store=True
     )
 
@@ -56,6 +54,7 @@ class AccountAssetLine(models.Model):
             ('date_end', '>=', self.line_date),
             ('company_id', '=', self.env.user.company_id.id)
         ], limit=1)
+
         facpce_index_start = self.env['account.asset.facpce'].search([
             ('date_start', '<=', self.line_date + relativedelta(months=-1)),
             ('date_end', '>=', self.line_date + relativedelta(months=-1)),
@@ -64,28 +63,23 @@ class AccountAssetLine(models.Model):
 
         if facpce_index_end and facpce_index_start:
             vals['inflation_coefficient_status'] = str(round(facpce_index_end.inflation_coefficient /
-                                                       facpce_index_start.inflation_coefficient, 2))
-            vals['inflation_coefficient'] = round(facpce_index_end.inflation_coefficient / \
-                                            facpce_index_start.inflation_coefficient, 2)
+                                                             facpce_index_start.inflation_coefficient, 2))
+            vals['inflation_coefficient'] = round(facpce_index_end.inflation_coefficient /
+                                                  facpce_index_start.inflation_coefficient, 2)
         else:
             vals.update({'inflation_coefficient_status': _("FACPCE Coefficient Doesn't Exist")})
 
         if self.previous_id:
-            vals.update({'historical_value': round(self.previous_id.historical_value_result, 2)})
-            vals.update({'historical_value_result': round(vals['historical_value'] * vals.get('inflation_coefficient', 1), 2)})
+            vals.update(
+                {'historical_value_result': round(self.previous_id.historical_value_result * vals.get('inflation_coefficient', 1), 2)})
         elif self.line_days > 0 and self.depreciated_value == 0.00:
-            vals.update({'historical_value': self.depreciation_base,
-                         'historical_value_result': round((self.depreciation_base * vals.get('inflation_coefficient', 1)), 2)})
-            inflation = round(vals.get('historical_value_result') - vals.get('historical_value'), 2)
+            vals.update({'historical_value_result': round((self.depreciation_base * vals.get('inflation_coefficient', 1)), 2)})
+            inflation = round(vals.get('historical_value_result') - self.asset_id.depreciation_base, 2)
             vals.update({'inflation_adjustment': inflation})
         else:
             vals.update({'historical_value': self.depreciation_base,
                          'historical_value_result': self.depreciation_base,
                          'inflation_coefficient_status': '0.00'})
-
-        if self.depreciated_value > 0 and self.inflation_coefficient > 0:
-            vals.update({'depreciated_value_result': self.depreciated_value * self.inflation_coefficient})
-            vals.update({'depreciated_adjustment': self.depreciated_value_result - self.depreciated_value})
 
         """
             This if statement computes all the lines again in case that
@@ -94,19 +88,21 @@ class AccountAssetLine(models.Model):
             the base depreciation value is zero and the write method
             save it anyways.
         """
-        if vals.get('historical_value') == 0:
+        if vals.get('historical_value_result') == 0:
             self.env['account.asset'].browse(self.asset_id.id).compute_depreciation_board()
+
+        if self.depreciated_value > 0 and self.inflation_coefficient > 0:
+            depreciated_value_result = round(self.depreciated_value * self.inflation_coefficient, 2)
+            vals.update({'depreciated_value_result': depreciated_value_result})
+            depreciated_adjustment = round(vals.get('depreciated_value_result', False) - self.depreciated_value, 2)
+            vals.update({'depreciated_adjustment': depreciated_adjustment})
 
         return super().write(vals)
 
     @api.depends("line_date", "amount", "previous_id", "type")
     def _compute_inflation_values(self):
         for line in self:
-            if not line.previous_id:
-                line.write({'historical_value': line.depreciation_base,
-                            'historical_value_result': line.depreciation_base})
-            else:
-                line.write({'historical_value': line.previous_id.historical_value})
+            line.write({'historical_value': line.asset_id.depreciation_base})
 
     @api.depends("historical_value", "inflation_coefficient", "historical_value_result")
     def _compute_inflation_adjustment(self):
@@ -114,10 +110,3 @@ class AccountAssetLine(models.Model):
             if line.historical_value_result > line.historical_value:
                 res = round((line.historical_value_result - line.historical_value), 2)
                 line.write({'inflation_adjustment': res})
-
-    @api.depends("depreciated_value", "amount", "line_date")
-    def _compute_depreciated_adjustment(self):
-        for line in self:
-            if line.depreciated_value > 0 and line.inflation_coefficient > 0:
-                line.write({'depreciated_value_result': line.depreciated_value * line.inflation_coefficient})
-                line.write({'depreciated_adjustment': line.depreciated_value_result - line.depreciated_value})

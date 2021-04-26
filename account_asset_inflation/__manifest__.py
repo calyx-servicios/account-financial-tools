@@ -26,7 +26,7 @@
     },
 
     # any module necessary for this one to work correctly
-    'depends': ['account_asset_management'],
+    'depends': ['account_asset_management', 'account_asset_batch_compute', 'account_asset_management_menu'],
 
     # always loaded
     'data': [
