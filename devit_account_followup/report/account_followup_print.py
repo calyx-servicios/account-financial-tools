@@ -78,8 +78,10 @@ class ReportRappel(models.AbstractModel):
                 balance = line.amount_currency
             line_data = {
                 'name': line.move_id.name,
+                'invoice_display_name': line.invoice_id.display_name or line.move_id.display_name,
                 'ref': line.ref,
                 'date': line.date,
+                'date_invoice': line.invoice_id.date_invoice,
                 'date_maturity': line.date_maturity,
                 'balance': balance,
                 'blocked': line.blocked,

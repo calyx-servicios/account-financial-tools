@@ -320,8 +320,8 @@ class ResPartner(models.Model):
                     if date <= current_date and aml['balance'] > 0:
                         strbegin = "<TD><B>"
                         strend = "</B></TD>"
-                    followup_table += "<TR>" + strbegin + str(aml['date']) + \
-                                      strend + strbegin + aml['name'] + \
+                    followup_table += "<TR>" + strbegin + str(aml['date_invoice'] or aml['date']) + \
+                                      strend + strbegin + str(aml['invoice_display_name'] or aml['name']) + \
                                       strend + strbegin + \
                                       (aml['ref'] or '') + strend + \
                                       strbegin + str(date) + strend + \
